@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutImage from "../../assets/images/about.webp";
-import { FaGlobe, FaHeadphonesAlt } from "react-icons/fa";
+import { FaGlobe, FaHandshake } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -55,12 +55,12 @@ function About() {
 
                 <div className="service" data-aos="fade-left">
                   <div className="flex-shrink-0">
-                    <FaHeadphonesAlt />
+                    <FaHandshake />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <h2 className="mt-0">Reliable 24/7 Support</h2>
+                    <h2 className="mt-0">Trust & Reliability</h2>
                     <p>
-                      Our dedicated support team ensures your operations stay smooth and secure, providing timely assistance whenever you need it.
+                      Built on integrity and accountability, we deliver consistent, high-quality IT services trusted by businesses.
                     </p>
                   </div>
                 </div>

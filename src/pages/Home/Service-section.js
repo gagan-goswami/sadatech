@@ -15,6 +15,7 @@ import {
   FaSitemap,
   FaCheckCircle,
   FaSearch,
+  FaEnvelope,
 } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -103,6 +104,12 @@ const services = [
     icon: <FaChartLine />,
     link: "/WebSolutions/WebsiteAudit",
     desc: "Thorough analysis of your website’s performance, speed, SEO, and security to uncover improvement areas.",
+  },
+  {
+    title: "Email Solutions",
+    icon: <FaEnvelope />,
+    link: "/WebSolutions/WebsiteAudit",
+    desc: "Secure, reliable, and professional business email solutions tailored for seamless communication and collaboration",
   },
 ];
 
