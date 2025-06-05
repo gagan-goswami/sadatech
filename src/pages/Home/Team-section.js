@@ -1,176 +1,65 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Team1 from "../../assets/images/team8.png";
-import Team2 from "../../assets/images/team7.jpg";
-import Team3 from "../../assets/images/team6.jpg";
-import Team4 from "../../assets/images/team5.jpg";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS
+import "aos/dist/aos.css";
+import Client1 from "../../assets/images/client-1.png";
+import Client2 from "../../assets/images/client-1.png";
+import Client3 from "../../assets/images/client-1.png";
+import Client4 from "../../assets/images/client-1.png";
+import Client5 from "../../assets/images/client-1.png";
 
-function Team() {
-  AOS.init({
-    duration: 1000, // Animation duration
-    once: true, // Whether animation should happen only once
-  });
+const Clients = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  const clientLogos = [Client1, Client1, Client1, Client1, Client1];
 
   return (
-    <section className="our-team">
+    <section className="clients-section">
       <Container>
-        <div className="section-title">
-          <span>Meet the Expert People</span>
-          <h2>Our Professional Expert Team Members</h2>
+        <div className="section-title text-center mb-5">
+          <span>Our Clients</span>
+          <h2>Trusted by Companies Across Industries</h2>
         </div>
         <Row>
-          <Col lg={3} sm={6}>
-            <div className="Team-item" data-aos="zoom-in">
-              <div className="team-image">
-                <img src={Team1} alt="team-image" className="img-fluid"></img>
-              </div>
-              <div className="team-scoial">
-                <ul className="social-icon">
-                  <li>
-                    <Link to="/">
-                      <FaFacebookF />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaXTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaInstagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaLinkedinIn />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="team-content">
-                <span>Product Designer</span>
-                <h2>Eliyana Rose</h2>
-              </div>
-            </div>
-          </Col>
-
-          <Col lg={3} sm={6}>
-            <div className="Team-item" data-aos="zoom-in">
-              <div className="team-image">
-                <img src={Team2} alt="team-image" className="img-fluid"></img>
-              </div>
-              <div className="team-scoial">
-                <ul className="social-icon">
-                  <li>
-                    <Link to="/">
-                      <FaFacebookF />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaXTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaInstagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaLinkedinIn />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="team-content">
-                <span>Co-Founder</span>
-                <h2>Travis Dean</h2>
-              </div>
-            </div>
-          </Col>
-
-          <Col lg={3} sm={6}>
-            <div className="Team-item" data-aos="zoom-in">
-              <div className="team-image">
-                <img src={Team3} alt="team-image" className="img-fluid"></img>
-              </div>
-              <div className="team-scoial">
-                <ul className="social-icon">
-                  <li>
-                    <Link to="/">
-                      <FaFacebookF />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaXTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaInstagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaLinkedinIn />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="team-content">
-                <span>Web Developer</span>
-                <h2>Maria Cruke</h2>
-              </div>
-            </div>
-          </Col>
-
-          <Col lg={3} sm={6}>
-            <div className="Team-item" data-aos="zoom-in">
-              <div className="team-image">
-                <img src={Team4} alt="team-image" className="img-fluid"></img>
-              </div>
-              <div className="team-scoial">
-                <ul className="social-icon">
-                  <li>
-                    <Link to="/">
-                      <FaFacebookF />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaXTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaInstagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaLinkedinIn />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="team-content">
-                <span>Designer</span>
-                <h2>Luke Weite</h2>
-              </div>
-            </div>
+          <Col lg={12}>
+            <OwlCarousel
+              className="owl-theme"
+              items={5}
+              autoplay={true}
+              loop={true}
+              margin={20}
+              autoplayHoverPause={true}
+              autoplayTimeout={2000}
+              smartSpeed={1000}
+              dots={false}
+              nav={false}
+              responsive={{
+                0: { items: 2 },
+                576: { items: 3 },
+                768: { items: 4 },
+                992: { items: 5 },
+              }}
+            >
+              {clientLogos.map((logo, index) => (
+                <div className="client-logo" key={index} data-aos="zoom-in">
+                  <img
+                    src={logo}
+                    alt={`Client ${index + 1}`}
+                    className="img-fluid"
+                  />
+                </div>
+              ))}
+            </OwlCarousel>
           </Col>
         </Row>
       </Container>
     </section>
   );
-}
+};
 
-export default Team;
+export default Clients;

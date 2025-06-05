@@ -22,11 +22,12 @@
 }
 
 .header-section .navbar-toggler {
-  background-color: var(--Secondary-color);
-  color: var(--white);
-  padding: 6px 10px;
-  line-height: 27px;
-  border: 1px solid white;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 8px 10px;
+    line-height: 15px;
+    font-size: 20px;
+    border: 1px solid white;
 }
 
 .header-section .navbar-toggler:focus {
@@ -70,9 +71,9 @@
 }
 
 .header-section .call-btn {
-  background-color: var(--white);
-  color: var(--primary-color);
-  padding: 9px 12px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 6px 12px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 5px;

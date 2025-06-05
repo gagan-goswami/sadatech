@@ -137,7 +137,7 @@ background: linear-gradient(
 
 .service-section .section-title h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -197,7 +197,7 @@ background: linear-gradient(
 
 .service-section .service-item h2 {
   font-size: 20px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -244,7 +244,7 @@ background: linear-gradient(
 
 .about-section .about-content h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -275,7 +275,7 @@ background: linear-gradient(
 
 .about-section .service h2 {
   font-size: 18px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -292,7 +292,7 @@ background: linear-gradient(
 }
 
 .about-section .about-item .read-more:hover {
-  background-color: var(--Secondary-color);
+  background-color: var(--secondary-color);
   transition: ease-in-out 0.2s;
   color: var(--white);
 }
@@ -320,19 +320,19 @@ background: linear-gradient(
 
 .funfact-section .funfact-card span {
   font-size: 30px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
 .funfact-section .funfact-card h3{
    font-size: 20px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
 .funfact-section .funfact-card p {
   font-size: 16px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 400;
   margin: 0;
 }
@@ -371,7 +371,7 @@ background: linear-gradient(
 }
 .whyChoose-section .whyChoose-content h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -402,7 +402,7 @@ background: linear-gradient(
 
 .whyChoose-section .whyChoose h2 {
   font-size: 18px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -450,7 +450,7 @@ background: linear-gradient(
 
 .project .section-title h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -565,130 +565,55 @@ background: linear-gradient(
 }
 
 .who-we-are .Who-wre-are-item a:hover {
-  background-color: var(--Secondary-color);
+  background-color: var(--secondary-color);
   transition: ease-in-out 0.2s;
 }
 
 /*==== whoweare-section-end ====*/
 
-/*==== team-section-start ====*/
+/*==== our-clint-section-start ==== */
 
-.our-team {
-  padding: 90px 0px;
-  background-color: var(--white);
-  overflow: hidden;
+.clients-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
 }
 
-.our-team .section-title {
-  margin: 0px 200px 45px 200px;
+.clients-section .section-title span {
+  font-size: 14px;
+  color: #d91427;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.clients-section .section-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #18216e;
+  margin-top: 10px;
+}
+
+.client-logo {
+background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
   text-align: center;
 }
 
-.our-team .section-title span {
-  font-size: 18px;
-  color: var(--primary-color);
-  font-weight: 600;
-  position: relative;
+.client-logo img {
+  max-height: 60px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
-.our-team .section-title span::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background-color: var(--primary-color);
-  left: -60px;
-  top: 10px;
+.client-logo:hover {
+  transform: scale(1.05);
 }
 
-.our-team .section-title span::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background-color: var(--primary-color);
-  top: 10px;
-  right: -60px;
-}
 
-.our-team .section-title h2 {
-  font-size: 40px;
-  color: var(--Secondary-color);
-  font-weight: 600;
-  margin-top: 15px;
-}
-
-.our-team .Team-item {
-  margin-bottom: 25px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.our-team .Team-item img {
-  transition: 2s;
-  border-radius: 20px;
-}
-
-.our-team .Team-item .team-content {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-}
-
-.our-team .Team-item .team-content span {
-  font-size: 12px;
-  color: var(--white);
-  background-color: var(--primary-color);
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-
-.our-team .Team-item .team-content h2 {
-  font-size: 16px;
-  color: var(--white);
-  background-color: var(--primary-color);
-  margin: 5px 0px;
-  padding: 5px 15px;
-  border-radius: 3px;
-}
-
-.our-team .Team-item:hover img {
-  transform: translateY(10px);
-  transition: 1s;
-}
-
-.our-team .team-scoial {
-  position: absolute;
-  right: 15px;
-  bottom: -200px;
-  opacity: 0;
-  transition: 1s;
-}
-
-.our-team .Team-item:hover .team-scoial {
-  bottom: 10px;
-  opacity: 1;
-  transition: 1s;
-}
-
-.our-team .team-scoial .social-icon {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.our-team .team-scoial .social-icon svg {
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 10px;
-  width: 35px;
-  height: 35px;
-  margin-bottom: 2px;
-  border-radius: 5px;
-}
-
-/*==== team-section-end ====*/
+/*==== our-clint-section-end ==== */
 
 /*==== testimonial-section-start ====*/
 
@@ -730,7 +655,7 @@ background: linear-gradient(
 
 .testimonial-section .section-title h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -831,7 +756,7 @@ background: linear-gradient(
 
 .cta-section .cta-item .cta-btn:hover {
   transition: ease-in-out 0.2s;
-  background-color: var(--Secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /*==== cta-section-end ====*/
@@ -892,7 +817,7 @@ background: linear-gradient(
 }
 
 .breadcrumb-section .breadcrumb li a:hover {
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -947,7 +872,7 @@ background: linear-gradient(
 
 .contact-section .section-title h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
   text-align: center;
@@ -960,7 +885,7 @@ background: linear-gradient(
 
 .contact-section .service-inner-item {
   margin-bottom: 20px;
-  background-color: var(--Secondary-color);
+  background-color: var(--secondary-color);
   padding: 34px 10px;
   border-radius: 5px;
 }
@@ -1042,7 +967,7 @@ background: linear-gradient(
 }
 
 .contact-section .contact-form-item {
-  background-color: var(--Secondary-color);
+  background-color: var(--secondary-color);
   padding: 35px 20px;
   border-radius: 5px;
 }
@@ -1091,7 +1016,7 @@ background: linear-gradient(
 
 .faq-section .section-title h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
@@ -1108,7 +1033,7 @@ background: linear-gradient(
 }
 
 .faq-section .btn-link {
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -1147,7 +1072,7 @@ background: linear-gradient(
 
 .error-page .error-item span {
   font-size: 120px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 800;
   text-shadow: 8px 0 #1b5fdd, -2px 0 #1b5fdd, 0 2px #3184f1, 0 -2px #1b5fdd,
     1px 1px #1b5fdd, -1px -1px #1b5fdd, 1px -1px #39a9f3, -1px 1px #1b5fdd;
@@ -1155,7 +1080,7 @@ background: linear-gradient(
 
 .error-page .error-item h2 {
   font-size: 40px;
-  color: var(--Secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   margin-bottom: 30px;
 }
