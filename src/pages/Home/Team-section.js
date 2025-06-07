@@ -6,17 +6,20 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Client1 from "../../assets/images/client-1.png";
-import Client2 from "../../assets/images/client-1.png";
-import Client3 from "../../assets/images/client-1.png";
-import Client4 from "../../assets/images/client-1.png";
-import Client5 from "../../assets/images/client-1.png";
+import Client2 from "../../assets/images/client-2.png";
+import Client3 from "../../assets/images/client-3.png";
+import Client4 from "../../assets/images/client-4.png";
+import Client5 from "../../assets/images/client-5.png";
+import Client6 from "../../assets/images/client-6.png";
+import Client7 from "../../assets/images/client-7.png";
+import Client8 from "../../assets/images/client-8.png";
 
 const Clients = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const clientLogos = [Client1, Client1, Client1, Client1, Client1];
+  const clientLogos = [Client1, Client2, Client3, Client4, Client5, Client6, Client7, Client8];
 
   return (
     <section className="clients-section">

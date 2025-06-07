@@ -22,8 +22,8 @@ function Hero() {
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
-                <span>EMPOWER YOUR BUSINESS</span>
-                <h2>Top-Notch IT Services to Drive Your Success</h2>
+                <span>TECH SOLUTIONS, TODAY & ALWAYS!</span>
+                <h2>We Specialize In Providing<br></br> End-to-end IT Services</h2>
                 <p>
                   At SadaTech Solutions, we specialize in delivering innovative
                   and reliable IT services <br></br>that help businesses streamline

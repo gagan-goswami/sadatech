@@ -255,6 +255,12 @@ background: linear-gradient(
   margin: 20px 0px;
 }
 
+.about-section .about-content strong{
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
 .about-section .service-main {
   margin-bottom: 50px;
 }
@@ -298,6 +304,7 @@ background: linear-gradient(
 }
 
 /*==== about-section-end =====*/
+
 
 /*==== funfact-section-start =====*/
 
@@ -408,27 +415,27 @@ background: linear-gradient(
 
 /*==== whyChoose-section-end =====*/
 
-/*==== project-section-start ====*/
+/*==== case-study-section-section-start ====*/
 
-.project {
+.case-study-section {
   padding: 90px 0px;
   overflow: hidden;
   background-color: var(--white);
 }
 
-.project .section-title {
+.case-study-section .section-title {
   margin-bottom: 45px;
   text-align: center;
 }
 
-.project .section-title span {
+.case-study-section .section-title span {
   font-size: 18px;
   color: var(--primary-color);
   font-weight: 600;
   position: relative;
 }
 
-.project .section-title span::before {
+.case-study-section .section-title span::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -438,7 +445,7 @@ background: linear-gradient(
   top: 10px;
 }
 
-.project .section-title span::after {
+.case-study-section .section-title span::after {
   content: "";
   position: absolute;
   width: 50px;
@@ -448,50 +455,136 @@ background: linear-gradient(
   right: -60px;
 }
 
-.project .section-title h2 {
+.case-study-section .section-title h2 {
   font-size: 40px;
   color: var(--secondary-color);
   font-weight: 600;
   margin-top: 15px;
 }
 
-.project .project-item {
-  margin-bottom: 25px;
-  border-radius: 5px;
-  transition: 0.5s;
+.case-study-section .case-card {
+  background-color: var(--background-color);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
 }
 
-.project .project-item img {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 5px;
-  transition: 0.5s;
+.case-study-section .case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-.project .nav-pills .nav-link.active,
-.project .nav-pills .show > .nav-link {
-  color: var(--white);
-  background-color: var(--primary-color);
-  transition: 0.5s;
+.case-study-section .case-card .icon-wrap {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
-.project .nav-link {
-  color: var(--dark);
-  font-size: 18px;
+.case-study-section .case-card h3 {
+  font-size: 22px;
   font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
 }
 
-.project .flex-column {
-  display: flex;
-  flex-direction: row !important;
-  margin-bottom: 25px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
+.case-study-section .case-card h4{
+   font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px; 
 }
 
-/*==== project-section-end ====*/
+.case-study-section .case-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.case-study-section .case-card button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: 0.5s ease;
+  margin-top: 30px;
+}
+
+.case-study-section .case-card button:hover {
+  background-color: var(--secondary-color);
+    transition: 0.5s ease;
+}
+
+.modal-content{
+  background-color: var(--secondary-color);
+}
+
+/* Modal Styling */
+.modal-backdrop {
+background-color: var(--secondary-color);
+}
+
+.modal-content {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--white);
+}
+
+.modal-body h5{
+  color: var(--white);
+  margin-bottom: 18px;
+}
+
+.modal-body p {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.modal-header .btn-close {
+    background-color: var(--white);
+    opacity: 1;
+    border-radius: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+}
+
+.modal-footer
+{
+  justify-content: left;
+}
+
+.modal-footer button{
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .case-card {
+    padding: 20px;
+  }
+
+  .case-card .case-icon {
+    font-size: 32px;
+  }
+
+  .case-card h3 {
+    font-size: 20px;
+  }
+}
+
+/*==== case-study-section-section-end ====*/
 
 /*==== whoweare-section-start ====*/
 
@@ -574,40 +667,60 @@ background: linear-gradient(
 /*==== our-clint-section-start ==== */
 
 .clients-section {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-}
+  padding: 45px 0;
+  background-color: var(--white);
 
+}
+.clients-section .section-title {
+  margin: 0px 200px 45px 200px;
+  text-align: center;
+}
 .clients-section .section-title span {
-  font-size: 14px;
-  color: #d91427;
+  font-size: 18px;
+  color: var(--primary-color);
   font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  position: relative;
 }
-
+.clients-section .section-title span::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  left: -60px;
+  top: 10px;
+}
+.clients-section .section-title span::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  top: 10px;
+  right: -60px;
+}
 .clients-section .section-title h2 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #18216e;
-  margin-top: 10px;
+  font-size: 40px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-top: 15px;
 }
-
 .client-logo {
-background-color: var(--secondary-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   text-align: center;
+  height: 100px;
+ background-color:var(--secondary-color);
+ display: flex;
+ align-items: center;
 }
-
 .client-logo img {
   max-height: 60px;
   object-fit: contain;
   margin: 0 auto;
 }
-
 .client-logo:hover {
   transform: scale(1.05);
 }
@@ -662,8 +775,8 @@ background-color: var(--secondary-color);
 
 .testimonial-section .testimonial-item {
   padding-right: 10px;
-  margin: 15px;
-}
+  margin: 15px 20px;
+} 
 
 .testimonial-section .slide-item p {
   color: var(--grey);
@@ -685,10 +798,9 @@ background-color: var(--secondary-color);
 }
 
 .testimonial-section .author img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
   display: flex;
+  height: 20px;
+  width: 10px;
 }
 
 .testimonial-section .author h2 {
@@ -1116,7 +1228,8 @@ background-color: var(--secondary-color);
   .who-we-are .Who-wre-are-item,
   .our-team .section-title,
   .testimonial-section .section-title,
-  .faq-section .section-title {
+  .faq-section .section-title,
+  .clients-section .section-title {
     margin: 0px 20px 45px 20px;
   }
 }
@@ -1129,7 +1242,7 @@ background-color: var(--secondary-color);
 
 @media (max-width: 575px) {
   .Hero-section .hero-caption h2 {
-    font-size: 42px;
+    font-size: 28px;
   }
 
   .service-section .section-title h2,
@@ -1138,15 +1251,16 @@ background-color: var(--secondary-color);
   .testimonial-section .section-title h2,
   .about-section .about-content h2,
   .whyChoose-section .whyChoose-content h2,
-  .project .section-title h2,
+  .case-study-section .section-title h2,
   .cta-section .cta-item h2,
   .contact-section .section-title h2,
-  .faq-section .section-title h2 {
-    font-size: 30px;
+  .faq-section .section-title h2,
+  .clients-section .section-title h2 {
+    font-size: 24px;
   }
 
   .breadcrumb-section .breadcrumb-heading h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 

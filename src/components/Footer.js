@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Logo from "../assets/images/sadatech-logo.png";
 import {
   FaFacebookF,
   FaTwitter,
@@ -21,25 +22,19 @@ function Footer() {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    const windowHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
+    const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = (scrollTop / windowHeight) * 100;
     setProgress(scrollPercent);
   };
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -50,122 +45,70 @@ function Footer() {
             <Col lg={3} md={6}>
               <div className="footer-item" data-aos="fade-right">
                 <div className="footer-logo">
-                  <Link to="/" className="navbar-brand">
-                    <h2>IT Tech</h2>
+                  <Link to="/">
+                    <img src={Logo} alt="Logo" className="img-fluid" />
                   </Link>
                 </div>
                 <p>
-                  We deliver innovative IT solutions tailored to modern businesses. Stay ahead with our cutting-edge tech services.
+                  Empowering businesses with customized web, mobile, and automation solutions tailored to today’s digital era.
                 </p>
                 <ul className="footer-social">
-                  <li>
-                    <Link to="/" aria-label="Facebook">
-                      <FaFacebookF />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" aria-label="Twitter">
-                      <FaTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" aria-label="Instagram">
-                      <FaInstagram />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" aria-label="LinkedIn">
-                      <FaLinkedinIn />
-                    </Link>
-                  </li>
+                  <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+                  <li><a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+                  <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+                  <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
                 </ul>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+
+            <Col lg={2} md={6}>
               <div className="footer-item" data-aos="fade-right">
-                <h2>Company</h2>
+                <span>Company</span>
                 <ul className="footer-links page-links">
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Company Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Help Center
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Team Members
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Contact Us
-                    </Link>
-                  </li>
+                  <li><Link to="/about"><FaAngleRight /> About Us</Link></li>
+                  <li><Link to="/careers"><FaAngleRight /> Careers</Link></li>
+                  <li><Link to="/services"><FaAngleRight /> Our Services</Link></li>
+                  <li><Link to="/team"><FaAngleRight /> Meet the Team</Link></li>
+                  <li><Link to="/contact"><FaAngleRight /> Contact Us</Link></li>
                 </ul>
               </div>
             </Col>
+
             <Col lg={3} md={6}>
               <div className="footer-item" data-aos="fade-right">
-                <h2>Our Services</h2>
+                <span>Solutions</span>
                 <ul className="footer-links quick-links">
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Career
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Leadership
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Press & Media
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Projects
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/">
-                      <FaAngleRight /> Challenge Of Project
-                    </Link>
-                  </li>
+                  <li><Link to="/web-development"><FaAngleRight /> Web Development</Link></li>
+                  <li><Link to="/mobile-apps"><FaAngleRight /> Mobile Apps</Link></li>
+                  <li><Link to="/saas-solutions"><FaAngleRight /> SaaS Platforms</Link></li>
+                  <li><Link to="/automation"><FaAngleRight /> Business Automation</Link></li>
+                  <li><Link to="/cloud"><FaAngleRight /> Cloud Solutions</Link></li>
                 </ul>
               </div>
             </Col>
-            <Col lg={3} md={6}>
+
+            <Col lg={4} md={6}>
               <div className="footer-item" data-aos="fade-right">
-                <h2>Get In Touch</h2>
+                <span>Get In Touch</span>
                 <ul className="footer-links contact-links">
                   <li>
                     <a
-                      href="https://maps.google.com/?q=123 Street, New York, USA"
+                      href="https://www.google.com/maps?q=Brigade+IRV,+Nallurhalli+Rd,+Whitefield,+Bengaluru,+Karnataka+560066"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaMapMarkerAlt /> 123 Street, New York, USA
+                      <FaMapMarkerAlt /> 9th Floor, Brigade IRV, Nallurhalli Rd,<br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whitefield, Bengaluru, KA 560066
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+1234567890">
-                      <FaPhoneAlt /> +123 456 7890
+                    <a href="tel:+918046872432">
+                      <FaPhoneAlt /> +91 80468 72432
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:info@example.com">
-                      <FaRegEnvelope /> info@example.com
+                    <a href="mailto:info@sadatechsolutions.com">
+                      <FaRegEnvelope /> info@sadatechsolutions.com
                     </a>
                   </li>
                 </ul>
@@ -173,20 +116,13 @@ function Footer() {
             </Col>
           </Row>
         </Container>
+
         <div className="copy-right">
-          <p>Copyright ©2024 All rights reserved</p>
+          <p>Copyright © {new Date().getFullYear()} SadaTech Solutions. All rights reserved.</p>
         </div>
 
-        <div
-          className={`progress-wrap ${progress > 5 ? "active-progress" : ""}`}
-          onClick={scrollToTop}
-        >
-          <svg
-            className="progress-circle svg-content"
-            width="100%"
-            height="100%"
-            viewBox="-1 -1 102 102"
-          >
+        <div className={`progress-wrap ${progress > 5 ? "active-progress" : ""}`} onClick={scrollToTop}>
+          <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path
               d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
               style={{
