@@ -4,9 +4,7 @@
   position: relative;
   z-index: 1;
   background: url(../assets/images/hero-bg.jpg) no-repeat center center;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   overflow: hidden;
   text-align: center;
 }
@@ -16,16 +14,31 @@
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-size: cover;
-  opacity: 0.5;
-background: linear-gradient(
-  90deg,
-  rgba(207, 29, 50, 1) 0%,
-  rgba(144, 67, 137, 1) 50%,
-  rgba(81, 106, 176, 1) 100%
-);
-  top: -10px;
+  opacity: 0.8;
+  background: linear-gradient(
+    270deg,
+    rgba(207, 29, 50, 1),
+    rgba(144, 67, 137, 1),
+    rgba(81, 106, 176, 1)
+  );
+  background-size: 600% 600%;
+  animation: gradientShift 10s ease infinite;
+  top: 0;
 }
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .Hero-section .hero-main {
   padding: 90px 0px;

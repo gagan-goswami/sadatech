@@ -107,7 +107,7 @@ function CaseStudies() {
         </Row>
 
         <Modal show={showModal} onHide={closeModal} centered>
-          <Modal.Header closeButton>
+          <Modal.Header closeButton >
             <Modal.Title>{activeCase?.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
