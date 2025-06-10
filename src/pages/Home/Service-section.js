@@ -9,6 +9,9 @@ import {
   FaDatabase,
   FaGlobe,
   FaEnvelope,
+  FaCloud,
+  FaBullhorn,
+  FaPhoneAlt,
 } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -49,6 +52,24 @@ const services = [
     icon: <FaEnvelope />,
     link: "/WebSolutions/WebsiteAudit",
     desc: "Secure, reliable, and professional business email solutions tailored for seamless communication and collaboration",
+  },
+  {
+    title: "Digital Marketing Services",
+    icon: <FaBullhorn />,
+    link: "/Marketing/DigitalMarketing",
+    desc: "SEO, social media, PPC, and content strategies to drive traffic, generate leads, and boost brand visibility online.",
+  },
+  {
+    title: "Telecom Services",
+    icon: <FaPhoneAlt />,
+    link: "/Services/Telecom",
+    desc: "Complete telecom solutions including VoIP, PBX systems, and managed communication infrastructure for businesses.",
+  },
+  {
+    title: "Cloud Computing",
+    icon: <FaCloud />,
+    link: "/Services/CloudComputing",
+    desc: "Flexible and scalable cloud solutions for storage, apps, and infrastructure—ensuring availability and data security.",
   },
 ];
 

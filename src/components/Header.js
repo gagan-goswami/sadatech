@@ -111,31 +111,9 @@ const Header = () => {
                   <Nav.Item>
                     <Nav.Link as={Link} to="/About">About</Nav.Link>
                   </Nav.Item>
-
-                  {/* Dropdowns */}
-                  {renderDropdown("services", "Services", [
-                    { to: "/Services/ITManagedServices", label: "IT Managed Services (AMC)" },
-                    { to: "/Services/HardwareRental", label: "Hardware Rental Services" },
-                    { to: "/Services/ITInfrastructure", label: "IT Infrastructure Services" },
-                    { to: "/Services/HardwareSupport", label: "Hardware Support & Maintenance" },
-                    { to: "/Services/ITConsultants", label: "IT Consultants" },
-                  ])}
-
-                  {renderDropdown("itsales", "IT Sales", [
-                    { to: "/ITSales/Hardware", label: "IT Hardware Sales" },
-                    { to: "/ITSales/SoftwareReselling", label: "Software Reselling" },
-                    { to: "/ITSales/Refurbished", label: "Refurbished Hardware’s" },
-                  ])}
-
-                  {renderDropdown("websolutions", "Web Solutions", [
-                    { to: "/WebSolutions/Hosting", label: "Domain, Hosting & Email" },
-                    { to: "/WebSolutions/DesignDevelopment", label: "Website Design & Development" },
-                    { to: "/WebSolutions/SEO", label: "Search Engine Optimisation (SEO)" },
-                    { to: "/WebSolutions/SMM", label: "Social Media Marketing" },
-                    { to: "/WebSolutions/SMO", label: "Social Media Optimisation" },
-                    { to: "/WebSolutions/WebsiteAudit", label: "Website Audit" },
-                  ])}
-
+                   <Nav.Item>
+                    <Nav.Link as={Link} to="/Services">Services</Nav.Link>
+                  </Nav.Item>
                   <Nav.Item>
                     <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
                   </Nav.Item>

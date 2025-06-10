@@ -6,52 +6,54 @@ import "aos/dist/aos.css"; // Import AOS CSS
 
 function Hero() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-      once: true, // Whether animation should happen only once
-    });
+    AOS.init({ duration: 1000, once: true });
+
+    const script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/particles.js";
+    script.onload = () => {
+      window.particlesJS("particles-js", {
+        particles: {
+          number: { value: 80 },
+          color: { value: "#ffffff" },
+          size: { value: 3 },
+          move: { speed: 1 },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.3,
+          },
+        },
+        interactivity: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" },
+        },
+      });
+    };
+    document.body.appendChild(script);
   }, []);
+
   return (
     <section className="Hero-section">
+      <div id="particles-js" className="particles-bg"></div>
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col lg={12}>
             <div className="hero-main">
-              <div
-                className="hero-caption"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
-                <span>TECH SOLUTIONS, TODAY & ALWAYS!</span>
-                <h2>We Specialize In Providing<br></br> End-to-end IT Services</h2>
+              <div className="hero-caption" data-aos="fade-up">
+                <span>INNOVATIVE • SCALABLE • SECURE</span>
+                <h2>
+                  Empowering Businesses<br /> with Smart IT Solutions
+                </h2>
                 <p>
-                  At SadaTech Solutions, we specialize in delivering innovative
-                  and reliable IT services <br></br>that help businesses streamline
-                  operations, boost productivity, and stay ahead in the digital
-                  world.
+                  From cloud computing and digital marketing to enterprise telecom solutions,<br /> SadaTech Solutions delivers IT services that drive real-world transformation.
                 </p>
 
-                <div
-                  className="contact-btns"
-                  data-aos="fade-left"
-                  data-aos-duration="1500"
-                >
-                  <Link
-                    to="/read-more"
-                    className="readbtn"
-                    aria-label="Read more about our services"
-                    data-aos="fade-down"
-                    data-aos-duration="1500"
-                  >
+                <div className="contact-btns" data-aos="fade-up">
+                  <Link to="/read-more" className="readbtn" aria-label="Read more about our services">
                     Read More
                   </Link>
-                  <Link
-                    to="/contact"
-                    className="contactbtn"
-                    aria-label="Contact us for more information"
-                    data-aos="fade-down"
-                    data-aos-duration="1500"
-                  >
+                  <Link to="/contact" className="contactbtn" aria-label="Contact us for more information">
                     Contact Us
                   </Link>
                 </div>
