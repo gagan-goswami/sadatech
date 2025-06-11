@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Breadcrumb from "./Breadcrumb-section";
 import { Link } from "react-router-dom";
-import Cta from "../Home/Cta-section";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -35,7 +34,6 @@ function ErrorPage() {
           </Row>
         </Container>
       </section>
-      <Cta />
     </>
   );
 }

@@ -4,12 +4,12 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Home from "./pages/Home/Home";
 import AboutPage from "./pages/About/Aboutpage";
-import ServicePage from "./pages/Service/Servicepage";
+import ServicePages from "./pages/Service/Servicepage"; 
 import ContactPage from "./pages/Contact/ContactPage";
 import Portfolio from "./pages/Portfolio/Portfoliopage";
-import Teampage from "./pages/Team/Teampage"; // Better path than Home/Team-section
+import Teampage from "./pages/Team/Teampage";
 import Faqs from "./pages/Faqs/Faqpage";
-import TestimonialPage from "./pages/Testimonial/Testimonialpage"; // Separate page version
+import TestimonialPage from "./pages/Testimonial/Testimonialpage";
 import Errorpage from "./pages/404-page/Error";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/service" element={<ServicePage />} />
+          <Route path="/services" element={<ServicePages />} />
           <Route path="/contactus" element={<ContactPage />} />
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/team" element={<Teampage />} />
