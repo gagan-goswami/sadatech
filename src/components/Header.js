@@ -62,9 +62,8 @@ const Header = () => {
         {label} <FaChevronDown className={`chevron ${activeDropdown === key ? "rotate" : ""}`} />
       </Nav.Link>
       <div
-        className={`dropdown-content ${
-          activeDropdown === key ? "open" : ""
-        }`}
+        className={`dropdown-content ${activeDropdown === key ? "open" : ""
+          }`}
       >
         {links.map(({ to, label }) => (
           <Nav.Link as={Link} to={to} className="dropdown-item" key={to}>
@@ -111,9 +110,13 @@ const Header = () => {
                   <Nav.Item>
                     <Nav.Link as={Link} to="/About">About</Nav.Link>
                   </Nav.Item>
-                   <Nav.Item>
-                    <Nav.Link as={Link} to="/Service">Services</Nav.Link>
-                  </Nav.Item>
+
+                  {/* Dropdowns */}
+                  {renderDropdown("services", "Services", [
+                    { to: "/It-Infrastructure", label: "IT Infrastructure Services" },
+                    { to: "it-managed-services", label: "IT Managed Services (AMC)" },
+                    { to: "email-solution", label: "Email Solution" },
+                  ])}
                   <Nav.Item>
                     <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
                   </Nav.Item>

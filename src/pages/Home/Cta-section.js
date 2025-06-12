@@ -1,24 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS
+import "aos/dist/aos.css";
 
 function Cta() {
-  AOS.init({
-    duration: 1000, // Animation duration
-    once: true, // Whether animation should happen only once
-  });
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="cta-section">
-      <Container fluid>
-        <Row>
-          <Col lg={12}>
-            <div className="cta-item">
-              <h2 data-aos="fade-right">Preparing For Your Business Success</h2>
-              <div data-aos="fade-down">
-                <Link to="/" className="cta-btn">
-                  Get Started
+      <Container>
+        <Row className="align-items-center">
+          <Col lg={8} md={12} className="mb-4 mb-lg-0">
+            <div data-aos="fade-right">
+              <h2 style={{ 
+                fontSize: "2.5rem",
+                fontWeight: "700",
+                marginBottom: "20px"
+              }}>
+                Ready to Transform Your Business with SadaTech?
+              </h2>
+              <p style={{ 
+                fontSize: "1.2rem",
+                opacity: "0.9",
+                marginBottom: "30px"
+              }}>
+                Let's build your digital future together. Our experts are ready to help you with customized IT solutions that drive growth and efficiency.
+              </p>
+            </div>
+          </Col>
+          <Col lg={4} md={12}>
+            <div data-aos="fade-left">
+              <div className="d-flex flex-column flex-md-row flex-lg-column gap-3">
+                <Link 
+                  to="/contact" 
+                  className="cta-btn-primary">
+                  Get Free Consultation
+                </Link>
+                <Link 
+                  to="/services" 
+                  className="cta-btn-secondary">
+                  Explore Services
                 </Link>
               </div>
             </div>
