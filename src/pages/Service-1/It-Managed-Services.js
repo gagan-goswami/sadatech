@@ -5,211 +5,132 @@ import Breadcrumb from "./Breadcrumb-section";
 function AdditionalServices() {
   const services = [
     {
-      title: "IT Managed Services (AMC)",
-      description:
-        "Ensure the smooth operation of your IT ecosystem with our Annual Maintenance Contracts. We provide continuous monitoring, preventive maintenance, and swift resolution of technical issues to help businesses maintain seamless performance and reduce downtime.",
-      details: [
-        "Proactive Monitoring & Alerts",
-        "Scheduled Maintenance & Patch Updates",
-        "Hardware Diagnostics & Repairs",
-        "24/7 Technical Support",
-        "SLA-based Issue Resolution",
-        "Periodic Performance Reports",
-      ],
-      img: "it-managed-service.jpg",
-    },
-    {
-      title: "Hardware Rental Services",
-      description:
-        "Cut down capital expenses with our flexible hardware rental plans. We offer high-quality, business-ready devices on a rental basis—ideal for training, events, or temporary infrastructure needs.",
-      details: [
-        "Laptops & Desktops",
-        "Projectors & Printers",
-        "Network Devices",
-        "Short-Term & Long-Term Leasing",
-        "On-Site Support",
-      ],
-      img: "hardware-rental.jpg",
-    },
-    {
-      title: "IT Infrastructure Services",
-      description:
-        "Build and manage reliable IT infrastructure with us. We deliver design, implementation, and management of enterprise-class infrastructure customized to your business scale and workflow.",
-      details: [
-        "Network Setup (LAN/WAN)",
-        "Data Center Planning",
-        "Structured Cabling",
-        "Cloud Infrastructure Setup",
-        "UPS & Power Backup",
-      ],
-      img: "it-infrastructure.jpg",
-    },
-    {
-      title: "Hardware Support & Maintenance",
-      description:
-        "Enhance the lifespan and performance of your IT hardware. We offer proactive and reactive maintenance services for all your IT equipment to ensure they function optimally without interruptions.",
-      details: [
-        "Preventive Maintenance",
-        "On-Site Diagnostics",
-        "Hardware Repair & Replacement",
-        "Support for All Brands",
-        "Annual Maintenance Plans",
-      ],
-      img: "hardware-support.jpg",
-    },
-    {
-      title: "IT Consultants",
-      description:
-        "Align your IT operations with business goals. Our certified consultants provide strategic advice, digital transformation plans, and implementation support for your IT roadmap.",
-      details: [
-        "Cloud Transformation",
-        "IT Budget Planning",
-        "Cybersecurity Strategy",
-        "Infrastructure Assessment",
-        "Vendor Evaluation",
-      ],
-      img: "it-consultants.jpg",
-    },
-    {
-      title: "IT Hardware Sales",
-      description:
-        "Procure top-quality hardware from authorized resellers. We deal in leading brands and provide expert advice to help you choose the right components for your business.",
-      details: [
-        "Desktops, Laptops & Servers",
-        "Network Devices (Routers, Switches)",
-        "Printers, Scanners, and MFDs",
-        "Monitors, Accessories, and Storage",
-      ],
-      img: "it-sales.jpg",
-    },
-    {
-      title: "Software Reselling",
-      description:
-        "Get genuine software licenses with full compliance. We are an authorized reseller for various essential business applications and software platforms.",
-      details: [
-        "Microsoft Office, Windows, Azure",
-        "Adobe Creative Cloud",
-        "Antivirus & Security Suites",
-        "ERP and CRM Solutions",
-      ],
-      img: "software-reselling.jpg",
-    },
-    {
-      title: "Refurbished Hardware",
-      description:
-        "Economical, tested, and warranty-backed refurbished IT equipment for startups, SMBs, and budget-conscious businesses.",
-      details: [
-        "Refurbished Laptops & PCs",
-        "Certified Pre-Owned Servers",
-        "Replacement Parts",
-        "Warranty & Support Included",
-      ],
-      img: "refurbished-hardware.jpg",
-    },
-    {
       title: "Web Solutions",
       description:
-        "Empower your digital presence with custom web development. We deliver end-to-end solutions—from UI design to backend architecture.",
+        "Establish and grow your online presence with SadaTech Solutions’ comprehensive Web Solutions. From domain registration and secure hosting to modern website design and development, we offer end-to-end services that help businesses stand out in the digital landscape. Our expert team ensures your website is fast, mobile-responsive, SEO-optimized, and built to convert. Whether you're starting fresh or revamping an existing site, we deliver scalable, secure, and user-friendly web platforms tailored to your brand and business goals.",
       details: [
-        "Corporate Websites",
-        "E-commerce Platforms",
-        "Web Portals & Dashboards",
-        "API & Database Integration",
-        "Responsive Mobile Design",
+        "Custom domain registration and DNS management",
+        "Reliable and scalable hosting solutions",
+        "Responsive website design with modern UI/UX",
+        "SEO-friendly development and performance optimization",
+        "Secure SSL setup and regular maintenance support",
+        "CMS and custom-coded solutions tailored to your business"
       ],
       img: "web-solutions.jpg",
     },
     {
       title: "Domain, Hosting & Email",
       description:
-        "Simplify your digital foundation with our bundled hosting and domain solutions. Secure infrastructure paired with professional business email setup.",
+        "Kickstart your online journey with SadaTech Solutions’ all-in-one Domain, Hosting & Email services. We provide everything you need to launch and manage a professional web presence — from securing your domain name to hosting your website and configuring reliable email on your business domain. Our solutions are secure, scalable, and backed by expert support, ensuring your business stays connected, visible, and protected online.",
       details: [
-        "Domain Registration",
-        "Shared/VPS/Dedicated Hosting",
-        "Business Email (MS365, GSuite)",
-        "DNS & SSL Setup",
+        "Domain name registration & DNS management",
+        "Fast & secure web hosting with high uptime",
+        "Business email setup on custom domain (e.g., yourname@company.com)",
+        "SSL certificate integration for secure connections",
+        "24/7 technical support and migration assistance",
+        "Bundled plans for startups, SMBs & enterprises"
       ],
-      img: "domain-hosting.jpg",
+      img: "domain-hosting-email.jpg",
     },
     {
       title: "Website Design & Development",
       description:
-        "From concepts to code, we create websites that represent your brand and drive business results with engaging design and seamless functionality.",
+        "Make a lasting digital impression with SadaTech Solutions’ Website Design & Development services. We build responsive, fast, and visually stunning websites tailored to your business goals. Whether you need a corporate site, e-commerce platform, or custom web application, our team combines modern UI/UX design with clean, scalable code to deliver a site that performs as great as it looks. Every website we create is optimized for SEO, mobile-friendly, and built with future scalability in mind.",
       details: [
-        "Custom UI/UX Design",
-        "Responsive Development",
-        "CMS Integration (WordPress, etc.)",
-        "SEO-Friendly Code",
-        "Maintenance & Support",
+        "Custom website design with modern UI/UX principles",
+        "Responsive layouts optimized for mobile, tablet, and desktop",
+        "E-commerce, business, and CMS-driven site development",
+        "Search engine–friendly structure & metadata optimization",
+        "Performance-tuned coding for speed and scalability",
+        "Integration with analytics, chat, forms, and third-party tools"
       ],
-      img: "web-development.jpg",
+      img: "website-development.jpg",
     },
     {
-      title: "Search Engine Optimisation (SEO)",
+      title: "Search Engine Optimization (SEO)",
       description:
-        "Boost visibility and traffic with advanced SEO strategies. We optimize every aspect of your website to rank higher on Google and other search engines.",
+        "Drive organic traffic and boost online visibility with SadaTech Solutions’ expert SEO services. Our strategic SEO approach is designed to improve your website’s rankings across major search engines like Google and Bing. From technical audits and on-page optimization to keyword research and backlink building, we help your business reach the right audience at the right time. Whether you’re a local service provider or an e-commerce brand, our SEO strategies are tailored to deliver measurable results and long-term growth.",
       details: [
-        "Keyword Research",
-        "On-Page SEO Optimization",
-        "Technical SEO Audits",
-        "Link Building",
-        "Performance Tracking",
+        "In-depth website SEO audits and competitor analysis",
+        "On-page optimization (meta tags, headers, content, URLs)",
+        "Technical SEO (speed, mobile-friendliness, schema)",
+        "Keyword research and content strategy planning",
+        "High-quality link building and authority boosting",
+        "Monthly performance reports and rank tracking"
       ],
-      img: "seo.jpg",
+      img: "seo-service.jpg",
     },
     {
       title: "Social Media Marketing (SMM)",
       description:
-        "Reach and engage your audience on popular platforms. Our campaigns are crafted to increase brand awareness, traffic, and conversions.",
+        "Expand your brand presence and engage your audience with SadaTech Solutions’ Social Media Marketing services. We craft data-driven strategies and creative content tailored for platforms like Facebook, Instagram, LinkedIn, and more. From content creation and post scheduling to ad campaigns and analytics, we manage everything to help you grow your following, build trust, and drive conversions. Whether you're looking to increase brand awareness or generate leads, our team ensures your social presence supports your business goals.",
       details: [
-        "Facebook, LinkedIn, Instagram",
-        "Content Calendar & Creatives",
-        "Targeted Ad Campaigns",
-        "Analytics & Reporting",
+        "Custom content creation tailored to your audience",
+        "Platform-specific strategies (Facebook, Instagram, LinkedIn, etc.)",
+        "Targeted ad campaigns to boost reach and engagement",
+        "Account setup, branding, and optimization",
+        "Monthly reports with performance insights and recommendations",
+        "Consistent post scheduling and community engagement"
       ],
       img: "social-media-marketing.jpg",
     },
     {
-      title: "Social Media Optimisation (SMO)",
+      title: "Social Media Optimization (SMO)",
       description:
-        "Make your brand discoverable with optimized social media profiles. Enhance engagement with consistent visuals, keywords, and content.",
+        "Enhance your brand’s social presence with SadaTech Solutions’ Social Media Optimization services. We optimize your social profiles and content strategy to ensure consistent branding, increased visibility, and better engagement. From bio setup and graphics to content alignment and hashtag strategy, our team ensures your business profiles reflect professionalism and attract the right audience. SMO lays the foundation for better interaction, improved follower retention, and organic growth across platforms.",
       details: [
-        "Profile Optimization",
-        "Bio & Link Setup",
-        "Creative Posting Strategy",
-        "Hashtag & Keyword Research",
-        "Engagement Boosting Techniques",
+        "Profile optimization across all major platforms",
+        "Branded graphics for covers, logos, and highlights",
+        "Keyword-rich bio and description writing",
+        "Hashtag strategy and content alignment",
+        "Post timing and engagement best practices",
+        "Audit reports to track growth and interaction"
       ],
-      img: "smo.jpg",
-    },
+      img: "social-media-optimization.jpg",
+    }
+    ,
     {
       title: "Website Audit",
       description:
-        "Get a complete health check of your website with our comprehensive audits. We assess every aspect of your site—from design to security—and provide actionable recommendations to improve performance and compliance.",
+        "Uncover hidden issues and performance gaps with SadaTech Solutions’ comprehensive Website Audit service. We conduct a detailed analysis of your website's technical setup, SEO structure, user experience, and security to identify areas for improvement. Whether you're planning a redesign or simply want to enhance performance, our audit provides actionable insights that help your site run faster, rank better, and convert more visitors. Every audit includes a full report with recommendations tailored to your goals.",
       details: [
-        "Performance & Speed Analysis",
-        "UX/UI Evaluation",
-        "SEO Audit (Technical + On-Page)",
-        "Mobile Responsiveness Check",
-        "Security Audit (SSL, Firewall, Malware)",
-        "Recommendations & Fix Strategy",
+        "Technical audit covering speed, mobile-friendliness & code quality",
+        "SEO analysis including keyword structure, metadata & content gaps",
+        "UX/UI evaluation to identify design and navigation improvements",
+        "Security check for SSL, vulnerabilities & outdated components",
+        "Performance benchmarking against competitors",
+        "Detailed audit report with prioritized action plan"
       ],
       img: "website-audit.jpg",
     },
+    {
+      title: "Local SEO Services",
+      description:
+        "Get found by nearby customers with SadaTech Solutions’ Local SEO Services. We help your business appear in local search results, map listings, and ‘near me’ queries by optimizing your online presence for your target region. Our team ensures your Google Business Profile, local directories, and website are fully aligned with local SEO best practices. Ideal for retailers, service providers, and location-based businesses looking to increase walk-in traffic and leads.",
+      details: [
+        "Google Business Profile setup & optimization",
+        "Local keyword research & geo-targeted content",
+        "NAP (Name, Address, Phone) consistency across directories",
+        "Local backlinks and citations from trusted sources",
+        "Customer review strategy and reputation management",
+        "Map pack visibility and regional search optimization"
+      ],
+      img: "local-seo.jpg",
+    }
   ];
 
   return (
     <>
       <Breadcrumb />
       <section className="additional-services-section">
-        <Container>
+        <Container fluid>
           <div className="section-title">
-          <span>OUR ADDITIONAL SERVICES</span>
-          <h2>Advanced IT & Web Services We Offer</h2>
-        </div>
+            <span>OUR ADDITIONAL SERVICES</span>
+            <h2>Advanced IT & Web Services We Offer</h2>
+          </div>
           <Row className="services-grid">
             {services.map((service, index) => (
-              <Col key={index} xs={12} sm={6} md={4} lg={4} className="mb-4">
+              <Col key={index} xs={12} sm={6} md={6} lg={6} className="mb-4">
                 <Card className="service-card h-100">
                   <Image
                     src={`/assets/images/services/${service.img}`}
