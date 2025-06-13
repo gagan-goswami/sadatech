@@ -5,7 +5,6 @@ import Cta from "../Home/Cta-section";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Whoweare from "../Home/Whoweare-section";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS CS
 
@@ -149,8 +148,6 @@ const ContactSection = () => {
           </Row>
         </Container>
       </section>
-      <Whoweare />
-
       <Cta />
     </>
   );

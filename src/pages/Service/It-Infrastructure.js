@@ -3,6 +3,10 @@ import { Container, Row, Col, Card, Image, ListGroup } from "react-bootstrap";
 import Breadcrumb from "./Breadcrumb-section";
 import TeamSection from "../Home/Team-section";
 import CtaSection from "../Home/Cta-section";
+import Service1 from "../../assets/images/mit-service-1.jpeg";
+import Service2 from "../../assets/images/mit-service-2.jpg";
+import Service3 from "../../assets/images/mit-service-3.jpg";
+import Service4 from "../../assets/images/mit-service-4.jpg";
 
 function AdditionalServices() {
   const services = [
@@ -20,7 +24,7 @@ function AdditionalServices() {
         "Firewall, antivirus, and network security implementation with threat detection",
         "Scalable AMC plans that grow with your business needs"
       ],
-      img: "it-managed-service.jpg",
+      img: Service1,
     },
     {
       title: "Hardware Rental Services",
@@ -34,7 +38,7 @@ function AdditionalServices() {
         "On-call technical support and maintenance during rental period",
         "Ideal for events, training sessions, temporary offices, and remote teams"
       ],
-      img: "hardware-rental.jpg",
+      img: Service2,
     },
 
     {
@@ -49,7 +53,7 @@ function AdditionalServices() {
         "Installation of UPS systems and enterprise power backup solutions",
         "Infrastructure audits, monitoring, and optimization planning"
       ],
-      img: "it-infrastructure.jpg",
+      img: Service3,
     },
     {
       title: "Hardware Support & Maintenance",
@@ -63,7 +67,7 @@ function AdditionalServices() {
         "Annual reviews to ensure hardware efficiency and upgrade planning",
         "Proactive maintenance to reduce downtime and lower long-term costs"
       ],
-      img: "hardware-support.jpg",
+      img: Service4,
     },
     {
       title: "IT Consultants",
@@ -138,7 +142,7 @@ function AdditionalServices() {
               <Col key={index} xs={12} sm={6} md={6} lg={6} className="mb-4">
                 <Card className="service-card h-100">
                   <Image
-                    src={`/assets/images/services/${service.img}`}
+                    src={service.img} // Directly use the imported image
                     alt={service.title}
                     className="service-image"
                     fluid

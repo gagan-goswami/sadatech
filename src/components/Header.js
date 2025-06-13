@@ -118,7 +118,7 @@ const Header = () => {
                     { to: "email-solution", label: "Email Solution" },
                   ])}
                   <Nav.Item>
-                    <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
+                    <Nav.Link as={Link} to="/contactus">Contact</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Offcanvas.Body>
