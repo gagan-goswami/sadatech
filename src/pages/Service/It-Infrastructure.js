@@ -7,6 +7,11 @@ import Service1 from "../../assets/images/mit-service-1.jpeg";
 import Service2 from "../../assets/images/mit-service-2.jpg";
 import Service3 from "../../assets/images/mit-service-3.jpg";
 import Service4 from "../../assets/images/mit-service-4.jpg";
+import Service5 from "../../assets/images/mit-service-5.jpg";
+import Service6 from "../../assets/images/mit-service-6.jpg";
+import Service7 from "../../assets/images/mit-service-7.jpg";
+import Service8 from "../../assets/images/mit-service-8.jpg";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function AdditionalServices() {
   const services = [
@@ -81,7 +86,7 @@ function AdditionalServices() {
         "Infrastructure modernization and future roadmap consulting",
         "Tailored IT advisory aligned with business growth goals"
       ],
-      img: "it-consultants.jpg",
+      img: Service5,
     },
 
     {
@@ -96,7 +101,7 @@ function AdditionalServices() {
         "Procurement assistance, vendor sourcing, and warranty management",
         "End-to-end delivery and after-sales technical support"
       ],
-      img: "it-sales.jpg",
+      img: Service6,
     },
     {
       title: "Software Reselling",
@@ -110,7 +115,7 @@ function AdditionalServices() {
         "License audits, usage monitoring, and renewal planning",
         "Procurement consulting to ensure cost-effective licensing"
       ],
-      img: "software-reselling.jpg",
+      img: Service7,
     },
     {
       title: "Refurbished Hardware",
@@ -124,9 +129,9 @@ function AdditionalServices() {
         "Warranty coverage with dedicated support and service options",
         "Cost-effective hardware upgrades for offices and IT labs"
       ],
-      img: "refurbished-hardware.jpg",
+      img: Service8,
     }
-  ];
+  ]
 
   return (
     <>
@@ -160,8 +165,13 @@ function AdditionalServices() {
               </Col>
             ))}
           </Row>
+          <div className="text-center mt-5">
+            <a href="tel:+918046872432" className="contact-button">
+              <FaPhoneAlt />  Get in Touch
+            </a>
+          </div>
         </Container>
-      </section>
+      </section >
       <TeamSection />
       <CtaSection />
     </>

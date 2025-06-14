@@ -1,6 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Card, Image, ListGroup } from "react-bootstrap";
 import Breadcrumb from "./Breadcrumb-section";
+import { FaPhoneAlt } from "react-icons/fa";
+import Service1 from "../../assets/images/mail-service-1.webp";
+import Service2 from "../../assets/images/mail-service-2.jpg";
+import Service3 from "../../assets/images/mail-service-3.jpg";
+import Service4 from "../../assets/images/mail-service-4.jpg";
+import Service5 from "../../assets/images/mail-service-5.jpg";
+import Service6 from "../../assets/images/mail-service-6.jpg";
+import Service7 from "../../assets/images/mail-service-7.png";
+import Service8 from "../../assets/images/mail-service-8.jpg";
 
 function AdditionalServices() {
   const services = [
@@ -16,7 +25,7 @@ function AdditionalServices() {
         "Migration from Microsoft, Zoho, or legacy email platforms",
         "Ongoing license management, billing support, and user training"
       ],
-      img: "google-workspace.jpg",
+      img: Service1,
     },
     {
       title: "Microsoft 365 Solutions",
@@ -30,7 +39,7 @@ function AdditionalServices() {
         "Migration from legacy systems or other platforms (e.g., G Suite, Zoho)",
         "Ongoing license renewals, support, and usage optimization"
       ],
-      img: "microsoft-365.jpg",
+      img: Service2,
     },
     {
       title: "Amazon Web Services (AWS)",
@@ -44,7 +53,7 @@ function AdditionalServices() {
         "Cost management, usage monitoring, and billing control",
         "DevOps support: CI/CD pipelines, Docker, and Lambda automation"
       ],
-      img: "aws-services.jpg",
+      img: Service3,
     },
     {
       title: "Microsoft Azure Solutions",
@@ -58,7 +67,7 @@ function AdditionalServices() {
         "Scalable infrastructure with auto-scaling and load balancing",
         "Security hardening, backup, and disaster recovery planning"
       ],
-      img: "azure-solutions.jpg",
+      img: Service4,
     },
     {
       title: "Hybrid Email Solutions",
@@ -72,7 +81,7 @@ function AdditionalServices() {
         "Email encryption, compliance, and data protection protocols",
         "Seamless migration and coexistence strategy for smooth transitions"
       ],
-      img: "hybrid-email.jpg",
+      img: Service5,
     },
     {
       title: "Webmail Solutions",
@@ -86,7 +95,7 @@ function AdditionalServices() {
         "Admin panel for mailbox creation and control",
         "Scalable plans with storage, backup, and support"
       ],
-      img: "webmail-solutions.jpg",
+      img: Service6,
     },
     {
       title: "Zoho Mail Solutions",
@@ -100,22 +109,22 @@ function AdditionalServices() {
         "Seamless migration from Gmail, Outlook, or other providers",
         "24/7 email access with high uptime, encryption, and backup"
       ],
-      img: "zoho-mail.jpg",
+      img: Service7,
     },
     {
-  title: "Business Email Solutions",
-  description:
-    "Power your team's communication with secure, professional-grade Business Email Solutions from SadaTech Solutions. We offer tailored email hosting on your custom domain, with reliable uptime, spam protection, and full admin control. Whether you prefer cPanel email, Zoho, Google Workspace, or Microsoft 365, our team ensures seamless setup, migration, and integration. We focus on delivering email systems that are scalable, secure, and built for productivity across devices.",
-  details: [
-    "Custom domain email hosting with branding",
-    "IMAP/POP & Webmail access with full control panel",
-    "Spam filtering, virus protection, and data encryption",
-    "Migration from old mail systems without data loss",
-    "Integration with mobile, Outlook, and desktop clients",
-    "Ongoing support, mailbox management & renewal tracking"
-  ],
-  img: "business-email.jpg",
-}
+      title: "Business Email Solutions",
+      description:
+        "Power your team's communication with secure, professional-grade Business Email Solutions from SadaTech Solutions. We offer tailored email hosting on your custom domain, with reliable uptime, spam protection, and full admin control. Whether you prefer cPanel email, Zoho, Google Workspace, or Microsoft 365, our team ensures seamless setup, migration, and integration. We focus on delivering email systems that are scalable, secure, and built for productivity across devices.",
+      details: [
+        "Custom domain email hosting with branding",
+        "IMAP/POP & Webmail access with full control panel",
+        "Spam filtering, virus protection, and data encryption",
+        "Migration from old mail systems without data loss",
+        "Integration with mobile, Outlook, and desktop clients",
+        "Ongoing support, mailbox management & renewal tracking"
+      ],
+      img: Service8,
+    }
   ];
 
   return (
@@ -132,7 +141,7 @@ function AdditionalServices() {
               <Col key={index} xs={12} sm={6} md={6} lg={6} className="mb-4">
                 <Card className="service-card h-100">
                   <Image
-                    src={`/assets/images/services/${service.img}`}
+                    src={service.img} // Directly use the imported image
                     alt={service.title}
                     className="service-image"
                     fluid
@@ -150,6 +159,11 @@ function AdditionalServices() {
               </Col>
             ))}
           </Row>
+          <div className="text-center mt-5">
+            <a href="tel:+918046872432" className="contact-button">
+              <FaPhoneAlt />  Get in Touch
+            </a>
+          </div>
         </Container>
       </section>
     </>

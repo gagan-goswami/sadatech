@@ -10,7 +10,7 @@ function Breadcrumb() {
       <Container>
         <div className="breadcrumb-box">
           <div className="breadcrumb-heading">
-            <h2>Website Development</h2>
+            <h2>Cloud Computing</h2>
           </div>
           <ul className="breadcrumb">
             <li>
@@ -19,7 +19,7 @@ function Breadcrumb() {
             <li>
               <IoIosArrowForward />
             </li>
-            <li>Website Development</li>
+            <li>Cloud Computing</li>
           </ul>
         </div>
       </Container>

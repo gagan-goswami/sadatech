@@ -1,6 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Card, Image, ListGroup } from "react-bootstrap";
-import Breadcrumb from "./Breadcrumb-section";
+import Breadcrumb from "../Service-1/Breadcrumb-section";
+import { FaPhoneAlt } from "react-icons/fa";
+import Service1 from "../../assets/images/web-service-1.jpg";
+import Service2 from "../../assets/images/web-service-2.jpg";
+import Service3 from "../../assets/images/web-service-3.jpg";
+import Service4 from "../../assets/images/web-service-4.jpg";
+import Service5 from "../../assets/images/web-service-5.jpg";
+import Service6 from "../../assets/images/web-service-6.jpg";
+import Service7 from "../../assets/images/web-service-7.jpg";
+import Service8 from "../../assets/images/web-service-8.jpg";
 
 function AdditionalServices() {
   const services = [
@@ -16,7 +25,7 @@ function AdditionalServices() {
         "Secure SSL setup and regular maintenance support",
         "CMS and custom-coded solutions tailored to your business"
       ],
-      img: "web-solutions.jpg",
+      img: Service1,
     },
     {
       title: "Domain, Hosting & Email",
@@ -30,7 +39,7 @@ function AdditionalServices() {
         "24/7 technical support and migration assistance",
         "Bundled plans for startups, SMBs & enterprises"
       ],
-      img: "domain-hosting-email.jpg",
+      img:  Service2,
     },
     {
       title: "Website Design & Development",
@@ -44,7 +53,7 @@ function AdditionalServices() {
         "Performance-tuned coding for speed and scalability",
         "Integration with analytics, chat, forms, and third-party tools"
       ],
-      img: "website-development.jpg",
+      img: Service3,
     },
     {
       title: "Search Engine Optimization (SEO)",
@@ -58,7 +67,7 @@ function AdditionalServices() {
         "High-quality link building and authority boosting",
         "Monthly performance reports and rank tracking"
       ],
-      img: "seo-service.jpg",
+      img: Service4,
     },
     {
       title: "Social Media Marketing (SMM)",
@@ -72,7 +81,7 @@ function AdditionalServices() {
         "Monthly reports with performance insights and recommendations",
         "Consistent post scheduling and community engagement"
       ],
-      img: "social-media-marketing.jpg",
+      img: Service5,
     },
     {
       title: "Social Media Optimization (SMO)",
@@ -86,7 +95,7 @@ function AdditionalServices() {
         "Post timing and engagement best practices",
         "Audit reports to track growth and interaction"
       ],
-      img: "social-media-optimization.jpg",
+      img:  Service6,
     }
     ,
     {
@@ -101,7 +110,7 @@ function AdditionalServices() {
         "Performance benchmarking against competitors",
         "Detailed audit report with prioritized action plan"
       ],
-      img: "website-audit.jpg",
+      img: Service7,
     },
     {
       title: "Local SEO Services",
@@ -115,7 +124,7 @@ function AdditionalServices() {
         "Customer review strategy and reputation management",
         "Map pack visibility and regional search optimization"
       ],
-      img: "local-seo.jpg",
+      img:  Service8,
     }
   ];
 
@@ -133,7 +142,7 @@ function AdditionalServices() {
               <Col key={index} xs={12} sm={6} md={6} lg={6} className="mb-4">
                 <Card className="service-card h-100">
                   <Image
-                    src={`/assets/images/services/${service.img}`}
+                    src={service.img} // Directly use the imported image
                     alt={service.title}
                     className="service-image"
                     fluid
@@ -151,6 +160,11 @@ function AdditionalServices() {
               </Col>
             ))}
           </Row>
+          <div className="text-center mt-5">
+            <a href="tel:+918046872432" className="contact-button">
+              <FaPhoneAlt />  Get in Touch
+            </a>
+          </div>
         </Container>
       </section>
     </>

@@ -108,14 +108,16 @@ const Header = () => {
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link as={Link} to="/About">About</Nav.Link>
+                    <Nav.Link as={Link} to="/about">About</Nav.Link>
                   </Nav.Item>
 
                   {/* Dropdowns */}
                   {renderDropdown("services", "Services", [
-                    { to: "/It-Infrastructure", label: "IT Infrastructure Services" },
-                    { to: "it-managed-services", label: "IT Managed Services (AMC)" },
+                    { to: "it-infrastructure", label: "IT Infrastructure Services" },
+                    { to: "website-design-development", label: "Website Design & Development" },
                     { to: "email-solution", label: "Email Solution" },
+                    { to: "software-reselling", label: "Software Reselling" },
+                    { to: "cloud-computing", label: "Cloud Computing" },
                   ])}
                   <Nav.Item>
                     <Nav.Link as={Link} to="/contactus">Contact</Nav.Link>

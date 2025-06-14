@@ -87,7 +87,7 @@ const Service = () => {
         </div>
         <Row>
           {services.map((service, index) => (
-            <Col key={index} lg={4} md={6} sm={6} data-aos="fade-up">
+            <Col key={index} lg={4} md={6} sm={6} data-aos="fade-up" className="h-100">
               <div className="service-item">
                 <div className="service-icon">{service.icon}</div>
                 <div className="service-content">
