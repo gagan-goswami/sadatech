@@ -2,6 +2,7 @@
 
 .header-section {
   background-color: var(--white);
+  overflow: hidden;
 }
 
 /* Sticky header */

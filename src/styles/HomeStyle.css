@@ -713,6 +713,7 @@ background-color: var(--secondary-color);
 .clients-section {
   padding: 45px 0;
   background-color: var(--white);
+  overflow: hidden;
 
 }
 .clients-section .section-title {
