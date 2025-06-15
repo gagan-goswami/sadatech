@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaChevronDown, FaPhoneAlt } from "react-icons/fa";
 import "../styles/HeaderStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,19 +10,28 @@ const Header = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
+  const location = useLocation(); // For active links & scroll to top
 
+  // Resize
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 992);
   };
 
-  const handleCloseOffcanvas = () => setShowOffcanvas(false);
+  // Offcanvas handlers
+  const handleCloseOffcanvas = () => {
+    setShowOffcanvas(false);
+    setActiveDropdown(null);
+  };
+
   const handleShowOffcanvas = () => setShowOffcanvas(true);
 
+  // Resize listener
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Scroll sticky menu
   useEffect(() => {
     const handleScroll = () => {
       const stickyClass = "is-sticky-menu";
@@ -30,9 +39,9 @@ const Header = () => {
       const stickyElement = document.querySelector(".is-sticky-on");
 
       if (scrollTop >= 250) {
-        stickyElement.classList.add(stickyClass);
+        stickyElement?.classList.add(stickyClass);
       } else {
-        stickyElement.classList.remove(stickyClass);
+        stickyElement?.classList.remove(stickyClass);
       }
     };
 
@@ -40,10 +49,18 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu + scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    handleCloseOffcanvas();
+  }, [location]);
+
+  // Toggle dropdown in mobile
   const toggleDropdown = (key) => {
     setActiveDropdown((prevKey) => (prevKey === key ? null : key));
   };
 
+  // Dropdown component
   const renderDropdown = (key, label, links) => (
     <Nav.Item
       className={`dropdown ${activeDropdown === key ? "active" : ""}`}
@@ -61,12 +78,15 @@ const Header = () => {
       >
         {label} <FaChevronDown className={`chevron ${activeDropdown === key ? "rotate" : ""}`} />
       </Nav.Link>
-      <div
-        className={`dropdown-content ${activeDropdown === key ? "open" : ""
-          }`}
-      >
+      <div className={`dropdown-content ${activeDropdown === key ? "open" : ""}`}>
         {links.map(({ to, label }) => (
-          <Nav.Link as={Link} to={to} className="dropdown-item" key={to}>
+          <Nav.Link
+            as={Link}
+            to={`/${to}`}
+            className={`dropdown-item ${location.pathname === `/${to}` ? "active" : ""}`}
+            key={to}
+            onClick={handleCloseOffcanvas}
+          >
             {label}
           </Nav.Link>
         ))}
@@ -105,13 +125,27 @@ const Header = () => {
               <Offcanvas.Body className="offcanvas-menu">
                 <Nav className="m-auto p-0">
                   <Nav.Item>
-                    <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/"
+                      onClick={handleCloseOffcanvas}
+                      className={location.pathname === "/" ? "active" : ""}
+                    >
+                      Home
+                    </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link as={Link} to="/about">About</Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/about"
+                      onClick={handleCloseOffcanvas}
+                      className={location.pathname === "/about" ? "active" : ""}
+                    >
+                      About
+                    </Nav.Link>
                   </Nav.Item>
 
-                  {/* Dropdowns */}
+                  {/* Dropdown Menu */}
                   {renderDropdown("services", "Services", [
                     { to: "it-infrastructure", label: "IT Infrastructure Services" },
                     { to: "website-design-development", label: "Website Design & Development" },
@@ -119,8 +153,16 @@ const Header = () => {
                     { to: "software-reselling", label: "Software Reselling" },
                     { to: "cloud-computing", label: "Cloud Computing" },
                   ])}
+
                   <Nav.Item>
-                    <Nav.Link as={Link} to="/contactus">Contact</Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      to="/contactus"
+                      onClick={handleCloseOffcanvas}
+                      className={location.pathname === "/contactus" ? "active" : ""}
+                    >
+                      Contact
+                    </Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Offcanvas.Body>
