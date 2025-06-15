@@ -65,11 +65,10 @@ function Footer() {
               <div className="footer-item" data-aos="fade-right">
                 <span>Company</span>
                 <ul className="footer-links page-links">
+                  <li><Link to="/"><FaAngleRight /> Home</Link></li>
                   <li><Link to="/about"><FaAngleRight /> About Us</Link></li>
-                  <li><Link to="/careers"><FaAngleRight /> Careers</Link></li>
-                  <li><Link to="/services"><FaAngleRight /> Our Services</Link></li>
-                  <li><Link to="/team"><FaAngleRight /> Meet the Team</Link></li>
-                  <li><Link to="/contact"><FaAngleRight /> Contact Us</Link></li>
+                  <li><Link to="#"><FaAngleRight /> Our Services</Link></li>
+                  <li><Link to="/contactus"><FaAngleRight /> Contact Us</Link></li>
                 </ul>
               </div>
             </Col>
@@ -78,11 +77,11 @@ function Footer() {
               <div className="footer-item" data-aos="fade-right">
                 <span>Solutions</span>
                 <ul className="footer-links quick-links">
-                  <li><Link to="/web-development"><FaAngleRight /> Web Development</Link></li>
-                  <li><Link to="/mobile-apps"><FaAngleRight /> Mobile Apps</Link></li>
-                  <li><Link to="/saas-solutions"><FaAngleRight /> SaaS Platforms</Link></li>
-                  <li><Link to="/automation"><FaAngleRight /> Business Automation</Link></li>
-                  <li><Link to="/cloud"><FaAngleRight /> Cloud Solutions</Link></li>
+                  <li><Link to="/it-infrastructure"><FaAngleRight /> IT Infrastructure Services</Link></li>
+                  <li><Link to="/website-design-development"><FaAngleRight /> website-design-development</Link></li>
+                  <li><Link to="/email-solution"><FaAngleRight /> Email Solution</Link></li>
+                  <li><Link to="/software-reselling"><FaAngleRight /> Software Reselling</Link></li>
+                  <li><Link to="/cloud-computing"><FaAngleRight /> Cloud Computing</Link></li>
                 </ul>
               </div>
             </Col>

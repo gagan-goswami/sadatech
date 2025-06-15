@@ -2,7 +2,6 @@
 
 .header-section {
   background-color: var(--white);
-  overflow: hidden;
 }
 
 /* Sticky header */
@@ -35,9 +34,9 @@
 .menu-bar .nav-link,
 .offcanvas-menu .nav-link {
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
-  margin-right: 5px;
+  margin-right: 20px;
   color: var(--dark);
   position: relative;
 }
@@ -88,6 +87,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  z-index: 9999999;
 }
 
 .dropdown-content.open {

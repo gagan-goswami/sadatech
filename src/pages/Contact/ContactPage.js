@@ -53,7 +53,8 @@ const ContactSection = () => {
                     <div className="ms-3">
                       <h2 className="mt-0">Address:</h2>
                       <p>
-                        <a href="/">123 Street, New York, USA</a>
+                        <a href="/">9th Floor, Brigade IRV, Nallurhalli Rd,
+        Whitefield, Bengaluru, KA 560066</a>
                       </p>
                     </div>
                   </div>
@@ -66,8 +67,7 @@ const ContactSection = () => {
                     <div className="ms-3">
                       <h2 className="mt-0">Contact Details:</h2>
                       <p>
-                        <a href="/">+123 456 7890</a>,{" "}
-                        <a href="/">+123 7890 456</a>
+                        <a href="tel:+918046872432">+91 8046872432</a>
                       </p>
                     </div>
                   </div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
                     <div className="ms-3">
                       <h2 className="mt-0">Email:</h2>
                       <p>
-                        <a href="/">example@gmail.com</a>
+                        <a href="mailto:info@sadatechsolutions.com">info@sadatechsolutions.com</a>
                       </p>
                     </div>
                   </div>
