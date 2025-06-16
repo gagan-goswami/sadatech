@@ -111,7 +111,7 @@ const Header = () => {
             >
               <FaBars />
             </Navbar.Toggle>
-            <Link to="/" className="call-btn">
+            <Link to="tel:+918046872432" className="call-btn">
               <FaPhoneAlt />
             </Link>
             <Navbar.Offcanvas
@@ -166,7 +166,7 @@ const Header = () => {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            <button className="contact-btn">Contact Us</button>
+            <Link to="/contactus" className="contact-btn">Contact Us</Link>
           </Navbar>
         </Container>
       </div>
