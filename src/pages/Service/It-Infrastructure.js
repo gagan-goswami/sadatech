@@ -11,6 +11,7 @@ import Service5 from "../../assets/images/mit-service-5.jpg";
 import Service6 from "../../assets/images/mit-service-6.jpg";
 import Service7 from "../../assets/images/mit-service-7.jpg";
 import Service8 from "../../assets/images/mit-service-8.jpg";
+import Service9 from "../../assets/images/mit-service-9.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 
 function AdditionalServices() {
@@ -130,7 +131,24 @@ function AdditionalServices() {
         "Cost-effective hardware upgrades for offices and IT labs"
       ],
       img: Service8,
-    }
+    },
+    {
+      title: "Telecom Services",
+      description:
+        "SadaTech Solutions offers end-to-end Telecom Services designed to enhance connectivity, streamline communication, and support your digital transformation. From VoIP to IP-PBX systems and structured cabling, we deliver scalable and secure telecom infrastructure tailored for modern business needs. Our telecom experts ensure seamless integration, crystal-clear voice quality, and reliable communication channels—whether you're setting up a new office or upgrading your existing systems. With proactive maintenance, robust configurations, and 24/7 support, we help you stay connected, productive, and future-ready.",
+      details: [
+        "Enterprise-grade VoIP and SIP trunking solutions for cost-effective communication",
+        "Installation and configuration of PBX/IP-PBX systems for internal and external call management",
+        "High-speed leased line internet and network setup for uninterrupted data flow",
+        "Integrated voice, video, and data communication systems with unified management",
+        "Structured cabling and hardware setup for seamless telecom connectivity",
+        "Ongoing monitoring, troubleshooting, and support for telecom infrastructure",
+        "Secure telecom networks with encryption, firewalls, and failover systems",
+        "Scalable telecom architecture designed to grow with your business expansion"
+      ],
+      img: Service9,
+    },
+
   ]
 
   return (

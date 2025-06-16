@@ -82,7 +82,7 @@ function About() {
               </div>
 
               <Link
-                to="/read-more"
+                to="/about"
                 className="read-more"
                 aria-label="Read more about SadaTech"
               >

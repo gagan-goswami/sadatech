@@ -20,55 +20,55 @@ const services = [
   {
     title: "IT Infrastructure Services",
     icon: infraIcon,
-    link: "/Services/ITInfrastructure",
+    link: "/it-infrastructure",
     desc: "Designing, implementing, and managing robust IT infrastructures that scale with your business growth.",
   },
   {
     title: "IT Consultants",
     icon: consultantIcon,
-    link: "/Services/ITConsultants",
+    link: "/it-infrastructure",
     desc: "Professional consultancy to help you plan and optimize your IT strategy for maximum business impact.",
   },
   {
     title: "Software Reselling",
     icon: softwareIcon,
-    link: "/ITSales/SoftwareReselling",
+    link: "/it-infrastructure",
     desc: "Licensed software from trusted vendors, offered at competitive prices with full implementation support.",
   },
   {
     title: "Domain, Hosting",
     icon: domainIcon,
-    link: "/WebSolutions/Hosting",
+    link: "/website-design-development",
     desc: "Secure and reliable domain registration, website hosting, and business-class email services for online presence.",
   },
   {
     title: "Website Design & Development",
     icon: webIcon,
-    link: "/WebSolutions/DesignDevelopment",
+    link: "/website-design-development",
     desc: "Custom website solutions with responsive designs, optimized UX/UI, and seamless backend functionality.",
   },
   {
     title: "Email Solutions",
     icon: emailIcon,
-    link: "/WebSolutions/WebsiteAudit",
+    link: "/email-solution",
     desc: "Secure, reliable, and professional business email solutions tailored for seamless communication and collaboration",
   },
   {
     title: "Digital Marketing Services",
     icon: marketingIcon,
-    link: "/Marketing/DigitalMarketing",
+    link: "/website-design-development",
     desc: "SEO, social media, PPC, and content strategies to drive traffic, generate leads, and boost brand visibility online.",
   },
   {
     title: "Telecom Services",
     icon: telecomIcon,
-    link: "/Services/Telecom",
+    link: "/it-infrastructure",
     desc: "Complete telecom solutions including VoIP, PBX systems, and managed communication infrastructure for businesses.",
   },
   {
     title: "Cloud Computing",
     icon: cloudIcon,
-    link: "/Services/CloudComputing",
+    link: "/cloud-computing",
     desc: "Flexible and scalable cloud solutions for storage, apps, and infrastructure—ensuring availability and data security.",
   },
 ];
@@ -79,7 +79,7 @@ const Service = () => {
   }, []);
 
   return (
-    <section className="service-section">
+    <section className="service-section" id="services">
       <Container>
         <div className="section-title">
           <span>OUR SERVICES</span>

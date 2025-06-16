@@ -3,10 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/sadatech-logo.png";
 import {
-  FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaInstagram,
+  FaWhatsapp,
   FaAngleRight,
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -53,10 +52,12 @@ function Footer() {
                   Empowering businesses with customized web, mobile, and automation solutions tailored to today’s digital era.
                 </p>
                 <ul className="footer-social">
-                  <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
-                  <li><a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
-                  <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
                   <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                  <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+                  <li><a href="https://wa.me/918046872432"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="whatsapp-link"><FaWhatsapp /></a></li>
                 </ul>
               </div>
             </Col>
@@ -80,7 +81,6 @@ function Footer() {
                   <li><Link to="/it-infrastructure"><FaAngleRight /> IT Infrastructure Services</Link></li>
                   <li><Link to="/website-design-development"><FaAngleRight /> website-design-development</Link></li>
                   <li><Link to="/email-solution"><FaAngleRight /> Email Solution</Link></li>
-                  <li><Link to="/software-reselling"><FaAngleRight /> Software Reselling</Link></li>
                   <li><Link to="/cloud-computing"><FaAngleRight /> Cloud Computing</Link></li>
                 </ul>
               </div>

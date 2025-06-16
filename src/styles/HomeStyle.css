@@ -82,6 +82,7 @@
   font-size: 16px;
   font-weight: 600;
   transition: ease-in-out 0.2s;
+  border: 2px solid var(--white);
 }
 
 .Hero-section .readbtn:hover {
@@ -100,6 +101,7 @@
   font-size: 16px;
   font-weight: 600;
   transition: ease-in-out 0.2s;
+  border: 2px solid var(--white);
 }
 
 .Hero-section .contactbtn:hover {
@@ -281,12 +283,11 @@
 }
 
 .service-section .service-item:hover .service-icon::before,
-.service-section .service-item:hover .service-icon::after{
+.service-section .service-item:hover .service-icon::after {
   color: var(--white);
   background-color: var(--white);
   transition: all 1s;
 }
-
 
 .service-section .service-item h2 {
   font-size: 20px;
@@ -1135,14 +1136,15 @@
   width: 50px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-section .service-inner-item svg {
+.contact-section .service-inner-item .icon svg {
   color: var(--white);
-  height: 25px;
-  width: 25px;
-  margin-top: 12px;
+  height: 24px;
+  width: 24px;
 }
 
 .contact-section .service-inner-item a {
@@ -1448,6 +1450,41 @@
 }
 
 /* ==== service-page-end ==== */
+.map-overlay {
+  padding: 60px 0;
+}
+.map-overlay {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+.map-overlay .contact-form-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.map-section {
+  margin-top: 40px;
+}
+
+.map-section h2{
+  font-size: 30px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.map-section p{
+  font-size: 16px;
+  color: var(--dark);
+}
+
+.map-overlay {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.272);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
 
 /* ====media query==== */
 

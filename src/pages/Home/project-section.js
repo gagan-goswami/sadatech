@@ -149,7 +149,7 @@ function CaseStudies() {
             <Button variant="secondary" onClick={closeModal}>
               Close
             </Button>
-            <Button variant="primary" href="/contact">
+            <Button variant="primary" href="/contactus">
               Contact Us
             </Button>
           </Modal.Footer>

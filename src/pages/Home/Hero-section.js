@@ -50,10 +50,10 @@ function Hero() {
                 </p>
 
                 <div className="contact-btns" data-aos="fade-up">
-                  <Link to="/read-more" className="readbtn" aria-label="Read more about our services">
+                  <Link to="/about" className="readbtn" aria-label="Read more about our services">
                     Read More
                   </Link>
-                  <Link to="/contact" className="contactbtn" aria-label="Contact us for more information">
+                  <Link to="/contactus" className="contactbtn" aria-label="Contact us for more information">
                     Contact Us
                   </Link>
                 </div>

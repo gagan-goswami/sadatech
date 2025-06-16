@@ -42,8 +42,8 @@ function AdditionalServices() {
       <section className="additional-services-section">
         <Container fluid>
           <div className="section-title">
-            <span>COMPLETE EMAIL INFRASTRUCTURE</span>
-            <h2>Deploy Powerful Email Platforms with Expert Setup Migration & Support</h2>
+            <span>CLOUD COMPUTING SERVICES</span>
+            <h2>Empower Your Business with Scalable, Secure & Cost-Effective Cloud Solutions</h2>
           </div>
           <Row className="services-grid">
             {services.map((service, index) => (

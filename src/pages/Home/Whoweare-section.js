@@ -20,7 +20,7 @@ function Whoweare() {
               <h2>We Provide Exclusive Digital Service</h2>
 
               <div className="explore-link" data-aos="fade-down">
-                <Link to="/">Explore Now</Link>
+                <Link to="/contactus">Contact Now</Link>
               </div>
             </div>
           </Col>
