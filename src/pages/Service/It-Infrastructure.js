@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Image, ListGroup } from "react-bootstrap";
 import Breadcrumb from "./Breadcrumb-section";
 import TeamSection from "../Home/Team-section";
 import CtaSection from "../Home/Cta-section";
-import Service1 from "../../assets/images/mit-service-1.jpeg";
+import Service1 from "../../assets/images/mit-service-1.jpg";
 import Service2 from "../../assets/images/mit-service-2.jpg";
 import Service3 from "../../assets/images/mit-service-3.jpg";
 import Service4 from "../../assets/images/mit-service-4.jpg";

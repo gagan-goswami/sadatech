@@ -150,7 +150,6 @@ const Header = () => {
                     { to: "it-infrastructure", label: "IT Infrastructure Services" },
                     { to: "website-design-development", label: "Website Design & Development" },
                     { to: "email-solution", label: "Email Solution" },
-                    { to: "software-reselling", label: "Software Reselling" },
                     { to: "cloud-computing", label: "Cloud Computing" },
                   ])}
 

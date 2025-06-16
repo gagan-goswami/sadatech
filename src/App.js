@@ -7,9 +7,8 @@ import Home from "./pages/Home/Home";
 import AboutPage from "./pages/About/Aboutpage";
 import ItInfrastructure from "./pages/Service/It-Infrastructure";
 import WebsiteDesignDevelopment from "./pages/Service-1/Website-design-development";
-import SoftwareReselling from "./pages/Service-3/Software-reselling";
 import EmailSolution from "./pages/Service-2/Email-Solution";
-import CloudComputing from "./pages/Service-4/Cloud-computing"; 
+import CloudComputing from "./pages/Service-3/Cloud-computing"; 
 import ContactPage from "./pages/Contact/ContactPage";
 import Portfolio from "./pages/Portfolio/Portfoliopage";
 import Teampage from "./pages/Team/Teampage";
@@ -29,7 +28,6 @@ function App() {
           <Route path="/it-infrastructure" element={<ItInfrastructure />} /> 
           <Route path="/Website-design-development" element={<WebsiteDesignDevelopment />} />
           <Route path="/email-solution" element={<EmailSolution />} />
-          <Route path="/Software-reselling" element={<SoftwareReselling />} />
           <Route path="/Cloud-Computing" element={<CloudComputing />} />
           <Route path="/contactus" element={<ContactPage />} />
           <Route path="/projects" element={<Portfolio />} />

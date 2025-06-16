@@ -2,10 +2,8 @@ import React from "react";
 import { Container, Row, Col, Card, Image, ListGroup } from "react-bootstrap";
 import Breadcrumb from "./Breadcrumb-section";
 import { FaPhoneAlt } from "react-icons/fa";
-import Service1 from "../../assets/images/mail-service-1.webp";
+import Service1 from "../../assets/images/mail-service-1.jpg";
 import Service2 from "../../assets/images/mail-service-2.jpg";
-import Service3 from "../../assets/images/mail-service-3.jpg";
-import Service4 from "../../assets/images/mail-service-4.jpg";
 import Service5 from "../../assets/images/mail-service-5.jpg";
 import Service6 from "../../assets/images/mail-service-6.jpg";
 import Service7 from "../../assets/images/mail-service-7.png";
@@ -40,34 +38,6 @@ function AdditionalServices() {
         "Ongoing license renewals, support, and usage optimization"
       ],
       img: Service2,
-    },
-    {
-      title: "Amazon Web Services (AWS)",
-      description:
-        "Leverage the power of the cloud with our end-to-end Amazon Web Services (AWS) solutions. SadaTech Solutions helps businesses design, deploy, and manage secure and scalable infrastructure on AWS. Whether you're launching a new cloud-native app, migrating existing workloads, or optimizing cloud costs, we tailor every AWS deployment to your business goals. From architecture to automation, our certified experts ensure performance, security, and reliability at every step.",
-      details: [
-        "Cloud infrastructure setup with EC2, S3, RDS, and more",
-        "Secure VPC, IAM roles, and data encryption configuration",
-        "Lift-and-shift migration of on-premise apps to AWS cloud",
-        "Auto-scaling, load balancing, and performance optimization",
-        "Cost management, usage monitoring, and billing control",
-        "DevOps support: CI/CD pipelines, Docker, and Lambda automation"
-      ],
-      img: Service3,
-    },
-    {
-      title: "Microsoft Azure Solutions",
-      description:
-        "Transform your business with secure, scalable, and intelligent cloud infrastructure through Microsoft Azure. At SadaTech Solutions, we design and implement Azure-powered environments tailored to your business goals — whether it's hosting applications, migrating servers, or building hybrid cloud strategies. Our Azure experts ensure seamless integration, maximum uptime, and long-term cost optimization, helping you take full advantage of Microsoft's enterprise-grade cloud ecosystem.",
-      details: [
-        "End-to-end Azure migration and deployment services",
-        "Setup of Virtual Machines, Azure SQL, and Blob Storage",
-        "Hybrid cloud architecture with on-premise integration",
-        "Azure Active Directory & role-based access control (RBAC)",
-        "Scalable infrastructure with auto-scaling and load balancing",
-        "Security hardening, backup, and disaster recovery planning"
-      ],
-      img: Service4,
     },
     {
       title: "Hybrid Email Solutions",
