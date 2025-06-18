@@ -78,7 +78,7 @@ function Testimonial() {
               autoplayHoverPause={true}
               autoplayTimeout={3000}
               smartSpeed={1000}
-              dots={false}
+              dots={true}
               nav={false}
               margin={30}
               responsive={{

@@ -410,6 +410,81 @@
 .funfact-section .funfact-card {
   border: 1px solid rgba(128, 128, 128, 0.404);
   padding: 20px 10px;
+  height: 100%;
+}
+
+/* Base orbit icon styling */
+.funfact-section .orbit-icon {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  z-index: 1;
+  overflow: visible;
+  border: 2px dashed var(--primary-color);
+  margin: 0 auto;
+}
+
+/* Orbit Dot 1 */
+.funfact-section .orbit-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: crimson;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(60px);
+  animation: orbit1 3s linear infinite;
+  z-index: 2;
+}
+
+/* Orbit Dot 2 (opposite direction or offset) */
+.funfact-section .orbit-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(180deg) translateX(60px);
+  animation: orbit2 3s linear infinite;
+  z-index: 2;
+}
+
+/* Orbit Animations */
+@keyframes orbit1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(60px);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(60px);
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(60px);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(540deg) translateX(60px);
+  }
+}
+
+/* Optional: Hover effect */
+.funfact-section .funfact-card:hover .orbit-icon::before,
+.funfact-section .funfact-card:hover .orbit-icon::after {
+  background-color: var(--secondary-color);
+  transition: all 1s;
 }
 
 .funfact-section .funfact-card h2 {
@@ -420,7 +495,7 @@
 
 .funfact-section .funfact-card span {
   font-size: 30px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -1123,7 +1198,7 @@
 .contact-section .service-inner-item {
   margin-bottom: 20px;
   background-color: var(--secondary-color);
-  padding: 34px 10px;
+  padding: 50px 10px;
   border-radius: 5px;
 }
 
@@ -1452,6 +1527,7 @@
 /* ==== service-page-end ==== */
 .map-overlay {
   padding: 60px 0;
+  overflow: hidden;
 }
 .map-overlay {
   background: #f9f9f9;
@@ -1467,13 +1543,13 @@
   margin-top: 40px;
 }
 
-.map-section h2{
+.map-section h2 {
   font-size: 30px;
   color: var(--secondary-color);
   font-weight: 600;
 }
 
-.map-section p{
+.map-section p {
   font-size: 16px;
   color: var(--dark);
 }
@@ -1528,6 +1604,20 @@
 
   .breadcrumb-section .breadcrumb-heading h2 {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 475px) {
+  .additional-services-section .service-card img.service-image {
+    height: 250px;
+  }
+
+  .funfact-section .funfact-card h3 {
+    font-size: 16px;
+  }
+
+  .funfact-section .funfact-card p {
+    font-size: 14px;
   }
 }
 

@@ -52,9 +52,9 @@ function Footer() {
                   Empowering businesses with customized web, mobile, and automation solutions tailored to today’s digital era.
                 </p>
                 <ul className="footer-social">
-                  <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
-                  <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
-                  <li><a href="https://wa.me/918046872432"
+                  <li><a href="https://www.linkedin.com/company/sadatechsolutions" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                  <li><a href="https://www.instagram.com/sadatechsolutions/" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+                  <li><a href="https://wa.me/919743111090"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="whatsapp-link"><FaWhatsapp /></a></li>
@@ -101,8 +101,13 @@ function Footer() {
                     </a>
                   </li>
                   <li>
+                    <FaPhoneAlt />{" "}
                     <a href="tel:+918046872432">
-                      <FaPhoneAlt /> +91 80468 72432
+                      +91 80468 72432 |
+                    </a>
+                    -
+                    <a href="tel:+918065194733">
+                      +91 806519 4733
                     </a>
                   </li>
                   <li>
