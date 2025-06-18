@@ -16,7 +16,7 @@ function AdditionalServices() {
         "Lift-and-shift migration of on-premise apps to AWS cloud",
         "Auto-scaling, load balancing, and performance optimization",
         "Cost management, usage monitoring, and billing control",
-        "DevOps support: CI/CD pipelines, Docker, and Lambda automation"
+        "DevOps support: CI/CD pipelines, Docker, and Lambda automation",
       ],
       img: Service1,
     },
@@ -30,7 +30,7 @@ function AdditionalServices() {
         "Hybrid cloud architecture with on-premise integration",
         "Azure Active Directory & role-based access control (RBAC)",
         "Scalable infrastructure with auto-scaling and load balancing",
-        "Security hardening, backup, and disaster recovery planning"
+        "Security hardening, backup, and disaster recovery planning",
       ],
       img: Service2,
     },
@@ -43,7 +43,10 @@ function AdditionalServices() {
         <Container fluid>
           <div className="section-title">
             <span>CLOUD COMPUTING SERVICES</span>
-            <h2>Empower Your Business with Scalable, Secure & Cost-Effective Cloud Solutions</h2>
+            <h2>
+              Empower Your Business with Scalable, Secure & Cost-Effective Cloud
+              Solutions
+            </h2>
           </div>
           <Row className="services-grid">
             {services.map((service, index) => (
@@ -70,7 +73,7 @@ function AdditionalServices() {
           </Row>
           <div className="text-center mt-5">
             <a href="tel:+918046872432" className="contact-button">
-              <FaPhoneAlt />  Get in Touch
+              <FaPhoneAlt /> Get in Touch
             </a>
           </div>
         </Container>

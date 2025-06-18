@@ -3,7 +3,7 @@ import Breadcrumb from "./Breadcrumb-section";
 import Project from "../Home/project-section";
 import Whoweare from "../Home/Whoweare-section";
 import Cta from "../Home/Cta-section";
-import Team from "../Home/Team-section";
+import Partner from "../Home/partner-section";
 
 function Portfoliopage() {
   return (
@@ -11,7 +11,7 @@ function Portfoliopage() {
       <Breadcrumb />
       <Project />
       <Whoweare />
-      <Team />
+      <Partner />
       <Cta />
     </>
   );

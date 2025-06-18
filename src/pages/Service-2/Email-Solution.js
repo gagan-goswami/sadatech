@@ -21,7 +21,7 @@ function AdditionalServices() {
         "Google Meet and Chat for seamless team communication",
         "Admin console setup, user provisioning, and access control",
         "Migration from Microsoft, Zoho, or legacy email platforms",
-        "Ongoing license management, billing support, and user training"
+        "Ongoing license management, billing support, and user training",
       ],
       img: Service1,
     },
@@ -35,7 +35,7 @@ function AdditionalServices() {
         "Secure cloud storage and sharing via OneDrive & SharePoint",
         "User provisioning, admin dashboard setup, and access controls",
         "Migration from legacy systems or other platforms (e.g., G Suite, Zoho)",
-        "Ongoing license renewals, support, and usage optimization"
+        "Ongoing license renewals, support, and usage optimization",
       ],
       img: Service2,
     },
@@ -49,7 +49,7 @@ function AdditionalServices() {
         "Support for Microsoft Exchange Hybrid & Gmail hybrid environments",
         "Custom routing policies, archiving, and backup setup",
         "Email encryption, compliance, and data protection protocols",
-        "Seamless migration and coexistence strategy for smooth transitions"
+        "Seamless migration and coexistence strategy for smooth transitions",
       ],
       img: Service5,
     },
@@ -63,7 +63,7 @@ function AdditionalServices() {
         "Robust spam filtering and virus protection",
         "Integrated calendar, contacts, and task management",
         "Admin panel for mailbox creation and control",
-        "Scalable plans with storage, backup, and support"
+        "Scalable plans with storage, backup, and support",
       ],
       img: Service6,
     },
@@ -77,7 +77,7 @@ function AdditionalServices() {
         "Advanced admin controls for mailbox & user management",
         "Integrated calendar, contacts, notes, and tasks",
         "Seamless migration from Gmail, Outlook, or other providers",
-        "24/7 email access with high uptime, encryption, and backup"
+        "24/7 email access with high uptime, encryption, and backup",
       ],
       img: Service7,
     },
@@ -91,10 +91,10 @@ function AdditionalServices() {
         "Spam filtering, virus protection, and data encryption",
         "Migration from old mail systems without data loss",
         "Integration with mobile, Outlook, and desktop clients",
-        "Ongoing support, mailbox management & renewal tracking"
+        "Ongoing support, mailbox management & renewal tracking",
       ],
       img: Service8,
-    }
+    },
   ];
 
   return (
@@ -104,7 +104,10 @@ function AdditionalServices() {
         <Container fluid>
           <div className="section-title">
             <span>COMPLETE EMAIL INFRASTRUCTURE</span>
-            <h2>Deploy Powerful Email Platforms with Expert Setup Migration & Support</h2>
+            <h2>
+              Deploy Powerful Email Platforms with Expert Setup Migration &
+              Support
+            </h2>
           </div>
           <Row className="services-grid">
             {services.map((service, index) => (
@@ -131,7 +134,7 @@ function AdditionalServices() {
           </Row>
           <div className="text-center mt-5">
             <a href="tel:+918046872432" className="contact-button">
-              <FaPhoneAlt />  Get in Touch
+              <FaPhoneAlt /> Get in Touch
             </a>
           </div>
         </Container>

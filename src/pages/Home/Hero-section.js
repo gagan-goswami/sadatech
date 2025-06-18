@@ -43,17 +43,29 @@ function Hero() {
               <div className="hero-caption" data-aos="fade-up">
                 <span>INNOVATIVE • SCALABLE • SECURE</span>
                 <h2>
-                  Empowering Businesses<br /> with Smart IT Solutions
+                  Empowering Businesses
+                  <br /> with Smart IT Solutions
                 </h2>
                 <p>
-                  From cloud computing and digital marketing to enterprise telecom solutions,<br /> SadaTech Solutions delivers IT services that drive real-world transformation.
+                  From cloud computing and digital marketing to enterprise
+                  telecom solutions,
+                  <br /> SadaTech Solutions delivers IT services that drive
+                  real-world transformation.
                 </p>
 
                 <div className="contact-btns" data-aos="fade-up">
-                  <Link to="/about" className="readbtn" aria-label="Read more about our services">
+                  <Link
+                    to="/about"
+                    className="readbtn"
+                    aria-label="Read more about our services"
+                  >
                     Read More
                   </Link>
-                  <Link to="/contactus" className="contactbtn" aria-label="Contact us for more information">
+                  <Link
+                    to="/contactus"
+                    className="contactbtn"
+                    aria-label="Contact us for more information"
+                  >
                     Contact Us
                   </Link>
                 </div>

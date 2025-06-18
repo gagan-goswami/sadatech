@@ -87,13 +87,24 @@ const Service = () => {
         </div>
         <Row>
           {services.map((service, index) => (
-            <Col key={index} lg={4} md={6} sm={6} data-aos="fade-up" className="h-100">
+            <Col
+              key={index}
+              lg={4}
+              md={6}
+              sm={6}
+              data-aos="fade-up"
+              className="h-100"
+            >
               <div className="service-item">
                 <div className="service-icon">
                   <img
                     src={service.icon}
                     alt={service.title}
-                    style={{ width: "64px", height: "64px", objectFit: "contain" }}
+                    style={{
+                      width: "64px",
+                      height: "64px",
+                      objectFit: "contain",
+                    }}
                   />
                 </div>
                 <div className="service-content">

@@ -28,7 +28,6 @@ const ContactSection = () => {
           <Row>
             <Col lg={6}>
               <div className="contact-item" data-aos="fade-down">
-                
                 {/* Address */}
                 <div className="service-inner-item mb-3">
                   <div className="d-flex align-items-start">
@@ -55,7 +54,9 @@ const ContactSection = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          SadaTech Solutions, 9th Floor, No.901, Brigade IRV Centre, Whitefield main road, Nallurahalli, Bengaluru, Karnataka - 560066
+                          SadaTech Solutions, 9th Floor, No.901, Brigade IRV
+                          Centre, Whitefield main road, Nallurahalli, Bengaluru,
+                          Karnataka - 560066
                         </a>
                       </p>
                     </div>
@@ -83,12 +84,8 @@ const ContactSection = () => {
                     <div className="ms-3">
                       <h2 className="mt-0">Contact Details:</h2>
                       <p>
-                        <a href="tel:+918046872432">
-                          +91 80468 72432 |
-                        </a> 
-                        <a href="tel:+918065194733"> 
-                         +91 806519 4733
-                        </a>
+                        <a href="tel:+918046872432">+91 80468 72432 |</a>
+                        <a href="tel:+918065194733">+91 806519 4733</a>
                       </p>
                     </div>
                   </div>
@@ -163,7 +160,10 @@ const ContactSection = () => {
               <Col lg={12}>
                 <div className="map-overlay-content">
                   <h2>Find Us Here</h2>
-                  <p>We are located in the heart of Bengaluru, ready to assist you with your IT needs.</p>
+                  <p>
+                    We are located in the heart of Bengaluru, ready to assist
+                    you with your IT needs.
+                  </p>
                 </div>
               </Col>
             </Row>

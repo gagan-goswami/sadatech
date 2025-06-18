@@ -24,7 +24,8 @@ function ErrorPage() {
                 <span>404</span>
                 <h2>Page Not Found</h2>
                 <p>
-                  Oops! The page you were asking for does not exist. Try searching our site for what you are looking for.
+                  Oops! The page you were asking for does not exist. Try
+                  searching our site for what you are looking for.
                 </p>
               </div>
               <div className="home-btn" data-aos="fade-down">

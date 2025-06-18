@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/HomeStyle.css";
 import Breadcrumb from "./Breadcrumb-section";
 import About from "../Home/About-section";
-import Team from "../Home/Team-section";
+import Team from "../Home/partner-section";
 import Whoweare from "../Home/Whoweare-section";
 import Cta from "../Home/Cta-section";
 import Testimonial from "../Home/Testimonial-section";
@@ -13,7 +13,7 @@ function AboutPage() {
     <>
       <Breadcrumb />
       <About />
-      <WhyChooseUs style={{ background: "white", padding: "20px" }}  />
+      <WhyChooseUs style={{ background: "white", padding: "20px" }} />
       <Whoweare />
       <Team />
       <Testimonial />

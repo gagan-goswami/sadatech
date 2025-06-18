@@ -57,8 +57,12 @@ function Funfact() {
           {facts.map((fact, idx) => (
             <Col
               key={idx}
-              lg={3} md={6} xs={6}
-              data-aos="zoom-in" className="mb-4">
+              lg={3}
+              md={6}
+              xs={6}
+              data-aos="zoom-in"
+              className="mb-4"
+            >
               <Card className="funfact-card shadow-sm text-center">
                 <div className="funfact-icon orbit-icon mb-3">
                   {fact.iconType === "image" ? (

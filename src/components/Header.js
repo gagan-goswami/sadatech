@@ -76,14 +76,21 @@ const Header = () => {
           }
         }}
       >
-        {label} <FaChevronDown className={`chevron ${activeDropdown === key ? "rotate" : ""}`} />
+        {label}{" "}
+        <FaChevronDown
+          className={`chevron ${activeDropdown === key ? "rotate" : ""}`}
+        />
       </Nav.Link>
-      <div className={`dropdown-content ${activeDropdown === key ? "open" : ""}`}>
+      <div
+        className={`dropdown-content ${activeDropdown === key ? "open" : ""}`}
+      >
         {links.map(({ to, label }) => (
           <Nav.Link
             as={Link}
             to={`/${to}`}
-            className={`dropdown-item ${location.pathname === `/${to}` ? "active" : ""}`}
+            className={`dropdown-item ${
+              location.pathname === `/${to}` ? "active" : ""
+            }`}
             key={to}
             onClick={handleCloseOffcanvas}
           >
@@ -147,8 +154,14 @@ const Header = () => {
 
                   {/* Dropdown Menu */}
                   {renderDropdown("services", "Services", [
-                    { to: "it-infrastructure", label: "IT Infrastructure Services" },
-                    { to: "website-design-development", label: "Website Design & Development" },
+                    {
+                      to: "it-infrastructure",
+                      label: "IT Infrastructure Services",
+                    },
+                    {
+                      to: "website-design-development",
+                      label: "Website Design & Development",
+                    },
                     { to: "email-solution", label: "Email Solution" },
                     { to: "cloud-computing", label: "Cloud Computing" },
                   ])}
@@ -158,7 +171,9 @@ const Header = () => {
                       as={Link}
                       to="/contactus"
                       onClick={handleCloseOffcanvas}
-                      className={location.pathname === "/contactus" ? "active" : ""}
+                      className={
+                        location.pathname === "/contactus" ? "active" : ""
+                      }
                     >
                       Contact
                     </Nav.Link>
@@ -166,7 +181,9 @@ const Header = () => {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            <Link to="/contactus" className="contact-btn">Contact Us</Link>
+            <Link to="/contactus" className="contact-btn">
+              Contact Us
+            </Link>
           </Navbar>
         </Container>
       </div>

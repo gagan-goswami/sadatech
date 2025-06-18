@@ -7,7 +7,7 @@ import Funfact from "./Funfact-section.js";
 import WhyChoose from "./Why-choose-section.js";
 import Project from "./project-section.js";
 import Whoweare from "./Whoweare-section.js";
-import Team from "./Team-section.js";
+import Partner from "./partner-section.js";
 import Testimonial from "./Testimonial-section.js";
 import Cta from "./Cta-section.js";
 
@@ -36,7 +36,7 @@ function Home() {
       <Whoweare />
 
       {/* team-section */}
-      <Team />
+      <Partner />
 
       {/* testimonial-section */}
       <Testimonial />

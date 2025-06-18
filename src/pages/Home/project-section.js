@@ -9,7 +9,7 @@ import {
   FaUniversity,
   FaLaptopCode,
   FaHome,
-  FaTimes 
+  FaTimes,
 } from "react-icons/fa";
 
 const caseStudies = [

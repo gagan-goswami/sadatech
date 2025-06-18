@@ -21,7 +21,8 @@ function Footer() {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const windowHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = (scrollTop / windowHeight) * 100;
     setProgress(scrollPercent);
   };
@@ -49,15 +50,38 @@ function Footer() {
                   </Link>
                 </div>
                 <p>
-                  Empowering businesses with customized web, mobile, and automation solutions tailored to today’s digital era.
+                  Empowering businesses with customized web, mobile, and
+                  automation solutions tailored to today’s digital era.
                 </p>
                 <ul className="footer-social">
-                  <li><a href="https://www.linkedin.com/company/sadatechsolutions" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
-                  <li><a href="https://www.instagram.com/sadatechsolutions/" target="_blank" rel="noreferrer"><FaInstagram /></a></li>
-                  <li><a href="https://wa.me/919743111090"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="whatsapp-link"><FaWhatsapp /></a></li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/sadatechsolutions"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/sadatechsolutions/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaInstagram />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://wa.me/919743111090"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whatsapp-link"
+                    >
+                      <FaWhatsapp />
+                    </a>
+                  </li>
                 </ul>
               </div>
             </Col>
@@ -66,10 +90,26 @@ function Footer() {
               <div className="footer-item" data-aos="fade-right">
                 <span>Company</span>
                 <ul className="footer-links page-links">
-                  <li><Link to="/"><FaAngleRight /> Home</Link></li>
-                  <li><Link to="/about"><FaAngleRight /> About Us</Link></li>
-                  <li><Link to="#"><FaAngleRight /> Our Services</Link></li>
-                  <li><Link to="/contactus"><FaAngleRight /> Contact Us</Link></li>
+                  <li>
+                    <Link to="/">
+                      <FaAngleRight /> Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about">
+                      <FaAngleRight /> About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="#">
+                      <FaAngleRight /> Our Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contactus">
+                      <FaAngleRight /> Contact Us
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </Col>
@@ -78,10 +118,26 @@ function Footer() {
               <div className="footer-item" data-aos="fade-right">
                 <span>Solutions</span>
                 <ul className="footer-links quick-links">
-                  <li><Link to="/it-infrastructure"><FaAngleRight /> IT Infrastructure Services</Link></li>
-                  <li><Link to="/website-design-development"><FaAngleRight /> website-design-development</Link></li>
-                  <li><Link to="/email-solution"><FaAngleRight /> Email Solution</Link></li>
-                  <li><Link to="/cloud-computing"><FaAngleRight /> Cloud Computing</Link></li>
+                  <li>
+                    <Link to="/it-infrastructure">
+                      <FaAngleRight /> IT Infrastructure Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/website-design-development">
+                      <FaAngleRight /> website-design-development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/email-solution">
+                      <FaAngleRight /> Email Solution
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/cloud-computing">
+                      <FaAngleRight /> Cloud Computing
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </Col>
@@ -96,19 +152,16 @@ function Footer() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaMapMarkerAlt /> 9th Floor, Brigade IRV, Nallurhalli Rd,<br />
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whitefield, Bengaluru, KA 560066
+                      <FaMapMarkerAlt /> 9th Floor, Brigade IRV, Nallurhalli Rd,
+                      <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whitefield,
+                      Bengaluru, KA 560066
                     </a>
                   </li>
                   <li>
                     <FaPhoneAlt />{" "}
-                    <a href="tel:+918046872432">
-                      +91 80468 72432 |
-                    </a>
-                    -
-                    <a href="tel:+918065194733">
-                      +91 806519 4733
-                    </a>
+                    <a href="tel:+918046872432">+91 80468 72432 |</a>-
+                    <a href="tel:+918065194733">+91 806519 4733</a>
                   </li>
                   <li>
                     <a href="mailto:info@sadatechsolutions.com">
@@ -122,11 +175,22 @@ function Footer() {
         </Container>
 
         <div className="copy-right">
-          <p>Copyright © {new Date().getFullYear()} SadaTech Solutions. All rights reserved.</p>
+          <p>
+            Copyright © {new Date().getFullYear()} SadaTech Solutions. All
+            rights reserved.
+          </p>
         </div>
 
-        <div className={`progress-wrap ${progress > 5 ? "active-progress" : ""}`} onClick={scrollToTop}>
-          <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <div
+          className={`progress-wrap ${progress > 5 ? "active-progress" : ""}`}
+          onClick={scrollToTop}
+        >
+          <svg
+            className="progress-circle svg-content"
+            width="100%"
+            height="100%"
+            viewBox="-1 -1 102 102"
+          >
             <path
               d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
               style={{

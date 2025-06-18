@@ -23,7 +23,7 @@ function AdditionalServices() {
         "Responsive website design with modern UI/UX",
         "SEO-friendly development and performance optimization",
         "Secure SSL setup and regular maintenance support",
-        "CMS and custom-coded solutions tailored to your business"
+        "CMS and custom-coded solutions tailored to your business",
       ],
       img: Service1,
     },
@@ -37,9 +37,9 @@ function AdditionalServices() {
         "Business email setup on custom domain (e.g., yourname@company.com)",
         "SSL certificate integration for secure connections",
         "24/7 technical support and migration assistance",
-        "Bundled plans for startups, SMBs & enterprises"
+        "Bundled plans for startups, SMBs & enterprises",
       ],
-      img:  Service2,
+      img: Service2,
     },
     {
       title: "Website Design & Development",
@@ -51,7 +51,7 @@ function AdditionalServices() {
         "E-commerce, business, and CMS-driven site development",
         "Search engine–friendly structure & metadata optimization",
         "Performance-tuned coding for speed and scalability",
-        "Integration with analytics, chat, forms, and third-party tools"
+        "Integration with analytics, chat, forms, and third-party tools",
       ],
       img: Service3,
     },
@@ -65,7 +65,7 @@ function AdditionalServices() {
         "Technical SEO (speed, mobile-friendliness, schema)",
         "Keyword research and content strategy planning",
         "High-quality link building and authority boosting",
-        "Monthly performance reports and rank tracking"
+        "Monthly performance reports and rank tracking",
       ],
       img: Service4,
     },
@@ -79,7 +79,7 @@ function AdditionalServices() {
         "Targeted ad campaigns to boost reach and engagement",
         "Account setup, branding, and optimization",
         "Monthly reports with performance insights and recommendations",
-        "Consistent post scheduling and community engagement"
+        "Consistent post scheduling and community engagement",
       ],
       img: Service5,
     },
@@ -93,11 +93,10 @@ function AdditionalServices() {
         "Keyword-rich bio and description writing",
         "Hashtag strategy and content alignment",
         "Post timing and engagement best practices",
-        "Audit reports to track growth and interaction"
+        "Audit reports to track growth and interaction",
       ],
-      img:  Service6,
-    }
-    ,
+      img: Service6,
+    },
     {
       title: "Website Audit",
       description:
@@ -108,7 +107,7 @@ function AdditionalServices() {
         "UX/UI evaluation to identify design and navigation improvements",
         "Security check for SSL, vulnerabilities & outdated components",
         "Performance benchmarking against competitors",
-        "Detailed audit report with prioritized action plan"
+        "Detailed audit report with prioritized action plan",
       ],
       img: Service7,
     },
@@ -122,10 +121,10 @@ function AdditionalServices() {
         "NAP (Name, Address, Phone) consistency across directories",
         "Local backlinks and citations from trusted sources",
         "Customer review strategy and reputation management",
-        "Map pack visibility and regional search optimization"
+        "Map pack visibility and regional search optimization",
       ],
-      img:  Service8,
-    }
+      img: Service8,
+    },
   ];
 
   return (
@@ -162,7 +161,7 @@ function AdditionalServices() {
           </Row>
           <div className="text-center mt-5">
             <a href="tel:+918046872432" className="contact-button">
-              <FaPhoneAlt />  Get in Touch
+              <FaPhoneAlt /> Get in Touch
             </a>
           </div>
         </Container>

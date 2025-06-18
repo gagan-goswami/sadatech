@@ -19,7 +19,16 @@ const Clients = () => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const clientLogos = [Client1, Client2, Client3, Client4, Client5, Client6, Client7, Client8];
+  const clientLogos = [
+    Client1,
+    Client2,
+    Client3,
+    Client4,
+    Client5,
+    Client6,
+    Client7,
+    Client8,
+  ];
 
   return (
     <section className="clients-section">

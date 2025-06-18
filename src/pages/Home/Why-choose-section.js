@@ -34,7 +34,10 @@ function WhyChoose() {
                 <span>Why Choose Us</span>
                 <h2>Empowering Businesses with Scalable IT Solutions</h2>
                 <p>
-                  At <strong>SadaTech Solutions</strong>, we blend innovation, security, and experience to deliver end-to-end IT services. Our customer-first approach and commitment to quality set us apart in the digital landscape.
+                  At <strong>SadaTech Solutions</strong>, we blend innovation,
+                  security, and experience to deliver end-to-end IT services.
+                  Our customer-first approach and commitment to quality set us
+                  apart in the digital landscape.
                 </p>
               </div>
 
@@ -46,7 +49,9 @@ function WhyChoose() {
                   <div className="flex-grow-1 ms-3">
                     <h2 className="mt-0">Strategic Growth Planning</h2>
                     <p>
-                      We partner with you to understand your business goals and implement IT strategies that drive measurable results and scalability.
+                      We partner with you to understand your business goals and
+                      implement IT strategies that drive measurable results and
+                      scalability.
                     </p>
                   </div>
                 </div>
@@ -58,7 +63,8 @@ function WhyChoose() {
                   <div className="flex-grow-1 ms-3">
                     <h2 className="mt-0">Quality-Driven Development</h2>
                     <p>
-                      Our team writes clean, optimized, and scalable code that ensures performance, security, and maintainability.
+                      Our team writes clean, optimized, and scalable code that
+                      ensures performance, security, and maintainability.
                     </p>
                   </div>
                 </div>
@@ -70,7 +76,9 @@ function WhyChoose() {
                   <div className="flex-grow-1 ms-3">
                     <h2 className="mt-0">Comprehensive Documentation</h2>
                     <p>
-                      From setup guides to ongoing support manuals, we ensure every project is well-documented for smooth handover and scalability.
+                      From setup guides to ongoing support manuals, we ensure
+                      every project is well-documented for smooth handover and
+                      scalability.
                     </p>
                   </div>
                 </div>

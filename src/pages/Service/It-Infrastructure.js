@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Image, ListGroup } from "react-bootstrap";
 import Breadcrumb from "./Breadcrumb-section";
-import TeamSection from "../Home/Team-section";
+import Partner from "../Home/partner-section";
 import CtaSection from "../Home/Cta-section";
 import Service1 from "../../assets/images/mit-service-1.jpg";
 import Service2 from "../../assets/images/mit-service-2.jpg";
@@ -28,7 +28,7 @@ function AdditionalServices() {
         "Detailed monthly health reports, audits, and future-ready IT insights",
         "Asset and license management with regular compliance checks",
         "Firewall, antivirus, and network security implementation with threat detection",
-        "Scalable AMC plans that grow with your business needs"
+        "Scalable AMC plans that grow with your business needs",
       ],
       img: Service1,
     },
@@ -42,7 +42,7 @@ function AdditionalServices() {
         "Custom rental durations—available on daily, weekly, and monthly basis",
         "Complete logistics: delivery, setup, and on-site installation services",
         "On-call technical support and maintenance during rental period",
-        "Ideal for events, training sessions, temporary offices, and remote teams"
+        "Ideal for events, training sessions, temporary offices, and remote teams",
       ],
       img: Service2,
     },
@@ -57,7 +57,7 @@ function AdditionalServices() {
         "Professional structured cabling for voice, data, and fiber networks",
         "Cloud service integration with secure hybrid and private network models",
         "Installation of UPS systems and enterprise power backup solutions",
-        "Infrastructure audits, monitoring, and optimization planning"
+        "Infrastructure audits, monitoring, and optimization planning",
       ],
       img: Service3,
     },
@@ -71,7 +71,7 @@ function AdditionalServices() {
         "Support for all major hardware brands and multi-vendor environments",
         "Rapid-response troubleshooting and on-site service availability",
         "Annual reviews to ensure hardware efficiency and upgrade planning",
-        "Proactive maintenance to reduce downtime and lower long-term costs"
+        "Proactive maintenance to reduce downtime and lower long-term costs",
       ],
       img: Service4,
     },
@@ -85,7 +85,7 @@ function AdditionalServices() {
         "Cybersecurity audits and compliance risk mitigation strategies",
         "Evaluation of software vendors and custom tech stack suggestions",
         "Infrastructure modernization and future roadmap consulting",
-        "Tailored IT advisory aligned with business growth goals"
+        "Tailored IT advisory aligned with business growth goals",
       ],
       img: Service5,
     },
@@ -100,7 +100,7 @@ function AdditionalServices() {
         "Office essentials: printers, scanners, multifunction devices (MFDs)",
         "Genuine OEM parts, power supplies, cabling, and IT accessories",
         "Procurement assistance, vendor sourcing, and warranty management",
-        "End-to-end delivery and after-sales technical support"
+        "End-to-end delivery and after-sales technical support",
       ],
       img: Service6,
     },
@@ -114,7 +114,7 @@ function AdditionalServices() {
         "ERP, CRM, and productivity platforms for SMBs and enterprises",
         "Advanced antivirus, firewall, and endpoint security software",
         "License audits, usage monitoring, and renewal planning",
-        "Procurement consulting to ensure cost-effective licensing"
+        "Procurement consulting to ensure cost-effective licensing",
       ],
       img: Service7,
     },
@@ -128,7 +128,7 @@ function AdditionalServices() {
         "Replacement parts including RAM, SSDs, motherboards, and power units",
         "Rigorous quality checks and certified performance testing",
         "Warranty coverage with dedicated support and service options",
-        "Cost-effective hardware upgrades for offices and IT labs"
+        "Cost-effective hardware upgrades for offices and IT labs",
       ],
       img: Service8,
     },
@@ -144,12 +144,11 @@ function AdditionalServices() {
         "Structured cabling and hardware setup for seamless telecom connectivity",
         "Ongoing monitoring, troubleshooting, and support for telecom infrastructure",
         "Secure telecom networks with encryption, firewalls, and failover systems",
-        "Scalable telecom architecture designed to grow with your business expansion"
+        "Scalable telecom architecture designed to grow with your business expansion",
       ],
       img: Service9,
     },
-
-  ]
+  ];
 
   return (
     <>
@@ -185,12 +184,12 @@ function AdditionalServices() {
           </Row>
           <div className="text-center mt-5">
             <a href="tel:+918046872432" className="contact-button">
-              <FaPhoneAlt />  Get in Touch
+              <FaPhoneAlt /> Get in Touch
             </a>
           </div>
         </Container>
-      </section >
-      <TeamSection />
+      </section>
+      <Partner />
       <CtaSection />
     </>
   );
