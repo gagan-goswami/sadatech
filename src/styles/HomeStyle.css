@@ -85,12 +85,6 @@
   border: 2px solid var(--white);
 }
 
-.Hero-section .readbtn:hover {
-  background-color: var(--primary-color);
-  transition: ease-in-out 0.2s;
-  color: var(--white);
-}
-
 .Hero-section .contactbtn {
   background-color: var(--primary-color);
   color: var(--white);
@@ -104,11 +98,6 @@
   border: 2px solid var(--white);
 }
 
-.Hero-section .contactbtn:hover {
-  background-color: var(--white);
-  transition: ease-in-out 0.2s;
-  color: var(--primary-color);
-}
 
 .Hero-section .contact-btns {
   margin-top: 40px;
@@ -1605,7 +1594,12 @@
   .breadcrumb-section .breadcrumb-heading h2 {
     font-size: 26px;
   }
+
+  .contact-section .contact-form-item{
+    background-color: var(--secondary-color);
+    padding: 35px 10px;
 }
+  }
 
 @media (max-width: 475px) {
   .additional-services-section .service-card img.service-image {
@@ -1619,6 +1613,8 @@
   .funfact-section .funfact-card p {
     font-size: 14px;
   }
+
+
 }
 
 @media (max-width: 375px) {

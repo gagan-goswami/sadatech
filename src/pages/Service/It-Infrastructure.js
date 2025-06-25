@@ -12,6 +12,7 @@ import Service6 from "../../assets/images/mit-service-6.jpg";
 import Service7 from "../../assets/images/mit-service-7.jpg";
 import Service8 from "../../assets/images/mit-service-8.jpg";
 import Service9 from "../../assets/images/mit-service-9.jpg";
+import Service10 from "../../assets/images/mit-service-10.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 
 function AdditionalServices() {
@@ -148,6 +149,20 @@ function AdditionalServices() {
       ],
       img: Service9,
     },
+    {
+      title: "IT Resource & Staffing Solutions",
+      description:
+        "Empower your business with flexible, scalable, and expert-driven IT Resource & Staffing Solutions from SadaTech Solutions. We specialize in connecting companies with pre-vetted, highly skilled technology professionals to meet short-term project requirements or support long-term business growth. Whether you need a single developer for a sprint, a support engineer for remote infrastructure, or a full IT team for an ongoing engagement, our staffing model ensures quick turnaround and quality results. We manage the entire process — from sourcing and technical screening to onboarding — so you can focus on your core operations while we ensure the right talent is in place. Our resourcing solutions are ideal for startups, SMBs, and enterprises looking to scale without the burden of permanent hires.",
+      details: [
+        "On-demand IT staffing for short-term, long-term, or contract roles",
+        "Access to certified professionals across software, support, cloud, and networking",
+        "Customized resource deployment aligned with your project goals and timeline",
+        "End-to-end support including talent sourcing, vetting, and onboarding",
+        "Cost-effective staffing models with minimal administrative overhead",
+        "Scalable solutions for startups, agencies, enterprises & IT departments"
+      ],
+      img: Service10,
+    }
   ];
 
   return (
